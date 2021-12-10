@@ -54,7 +54,7 @@ document.addEventListener("keyup", function(event) {
          else if (event.deltaY < 0)
          {
           if (window.paper2.configs.paper2_classic.maxScale < 4.5)
-         {
+         { 
           window.paper2.configs.paper2_classic.maxScale += 0.5;
          }
          }
