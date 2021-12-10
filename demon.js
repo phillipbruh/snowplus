@@ -1,6 +1,6 @@
-//open the menu with \
+//open the menu with alt + i
 
-//VERSION IS 0.3.1 IF YOUR MENU DOES NOT SAY THAT PLEASE UPDATE BY CLICKING INSTALL AND COPYING THE CODE
+//VERSION IS 0.3.2 IF YOUR MENU DOES NOT SAY THAT PLEASE UPDATE BY CLICKING INSTALL AND COPYING THE CODE
 //Then opening this link chrome-extension://dhdgffkkebhmkfjojejmpbldmpobfkfo/options.html#nav=dashboard
 //And click the edit button on demonmenuXD
 //do control a to highlight everything then control v to paste then control s to save
@@ -21,10 +21,10 @@
 
 
 // ==UserScript==
-// @name         devilmenuXD(0.3.1)
+// @name         devilmenuXD(0.3.2)
 // @namespace    http://tampermonkey.net/
-// @version      0.3.1
-// @description  VERSION IS 0.3.1 IF YOUR MENU DOES NOT SAY THAT PLEASE UPDATE BY CLICKING INSTALL AND COPYING THE CODE IN devilmenuXD AND OPENING TAMPER MONKEY(in extentions)
+// @version      0.3.2
+// @description  VERSION IS 0.3.2 IF YOUR MENU DOES NOT SAY THAT PLEASE UPDATE BY CLICKING INSTALL AND COPYING THE CODE IN devilmenuXD AND OPENING TAMPER MONKEY(in extentions)
 // @author       snowiscool
 // @match        *://*/*
 // @updateUrl    https://gist.githubusercontent.com/phillipbruh/251f81cee091d2c47e6134db0fa1a15a/raw/f41b95454ca23766f93888ed59f407a7ee246703/devil
@@ -36,7 +36,7 @@
 
 
 
-//auto inject end
+//auto inject 
 if ( document.URL.includes("https://student.readingplus.com/") ) {
       var r = confirm("want to automaticly inject");
       if (r == true) {
@@ -55,13 +55,18 @@ if ( document.URL.includes("https://student.readingplus.com/") ) {
       }};
 //auto inject end
 
-
+//keycodes
 
 document.addEventListener("keyup", function(event) {
-    if (event.keyCode === 220) {
+    if (event.keyCode === 73&&event.altKey) {
+       hide();
+    }})
+document.addEventListener("keyup", function(event) {
+    if (event.keyCode === 73&&event.altKey) {
                 document.onkeypress = function (e) {
             // use e.keyCode
         };
+
 
 
 
@@ -89,9 +94,9 @@ document.addEventListener("keyup", function(event) {
 
             var txt = document.getElementById("ember3822");
             // Just to show button is pressed
-            let person = prompt("Please enter your key");
+            let person = confirm("inject devil menu?");
             let text;
-            if (person == "666") {
+            if (person == true) {
                 var ROOT = document.querySelector("body > div");
 
             function getRoomHash() {
@@ -176,14 +181,14 @@ document.addEventListener("keyup", function(event) {
         <div id="box">
             <button class="ou" id="accordian">😈</button>
             <div class="ou" id="box2">
-                <p style="color:red;"> Demon menu(0.3.1)</p>
+                <p style="color:red;"> Demon menu(0.3.2)</p>
                 <button id="skinbtnup" style ="color:black";>Check for updates</button>
 
                 <section><div class="dropdown"><button class="dropbtn">Hacks [Hover]</button>
 
                 <div class="dropdown-content">
 
-                <p id="skinbtn1">Reading plus</p><p id="skinbtn2">pageeditor</p><p id="skinbtn3">ixl</p><p id="skinbtn4">blooket coins</p><p id="skinbtn5">web unblocker</p><p id="skinbtn6">snake</p><p id="skinbtn7">vocabulary.com practice</p>
+                <p id="skinbtn1">Reading plus</p><p id="skinbtn2">pageeditor</p><p id="skinbtn3">ixl</p><p id="skinbtn4">blooket coins</p><p id="skinbtn5">web unblocker</p><p id="skinbtn6">ptsd</p><p id="skinbtn7">vocabulary.com practice</p>
                 <div class="dropdown-content1">
 
 
@@ -402,6 +407,7 @@ document.addEventListener("keyup", function(event) {
                 if (panel.style.display == "none") panel.style.display = "grid";
                 else { panel.style.display = "none"; }
             }
+
             //button functions
 
                 //WARNING Skins 31-34 will cause crash. geralt=35
@@ -471,9 +477,93 @@ document.addEventListener("keyup", function(event) {
                 (()=>{var unblockedUrl = prompt("enter the url to unblock.");if (unblockedUrl !== null) {location = "http://webcache.googleusercontent.com/search?q=cache:" + escape(unblockedUrl);}})();
             }
                 sb6.onclick = function() {
+        var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.createTemplateTagFirstArg=function(a){return a.raw=a};$jscomp.createTemplateTagFirstArgWithRaw=function(a,b){a.raw=b;return a};var incrementingNum=0,colors="red orange yellow green blue purple pink".split(" ");setInterval(function(){6<=incrementingNum?incrementingNum=0:incrementingNum++;for(var a=document.querySelectorAll("div"),b=0;b<a.length;b++)a[b].style.backgroundColor=colors[incrementingNum],a[b].style.transition="background-color 1s"},1E3);
+        try{var audio=document.createElement("audio");audio.src="http://soundbible.com/mp3/Fart-Common-Everyday-Fart_Mike-Koenig.mp3";audio.loop=!0;audio.play()}catch(a){console.log("Unable to play audio.")}
+        var css="\nhtml, body {\n\tcursor: url('data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wL///8C////Av///wL///8C////Av///wL///8C////Av///wLZ7vH/2u/z/////wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////Av///wL///8C////Av///wL///8C////Ah1wdf8ncnz/O217/ypwff8tc4D/JnN8/zJwcv////8C////Av///wL///8C////Av///wL///8C////Av///wIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8C////Av///wL///8C////Av///wI0eoT/K32F/y10fv8qcXv/LnB7/ytteP8sdn7/O4yT/zR6ff////8C////Av///wL///8C////Av///wL///8C////AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wL///8C////Av///wL///8CJ3qA/y1/h/8xeYP/J254/ypxe/8xeIL/KXB6/ydkbv8oYGv/KHJ4/zKQjv////8C////Av///wL///8C////Av///wL///8C////AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////Av///wL///8C////Aj5xdf8ueYH/L3mF/yp5gv8yf5D/NXqM/yZykP8kcI3/L3eI/zhwdv8teXb/MIOE/z2RjP////8C////Av///wL///8C////Av///wIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8C////Av///wL///8CL32H/y+BhP8zhIn/MH+c/1yZy/9co8f/T5y4/02atv9jr9P/orTe/zmOk/86mJj/NZ+a/zSMh/////8C////Av///wL///8C////AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wL///8C////Aj2Dif8ugIX/L4GG/y5+l/9jo9f/AAkS/0E8ef9ARYP/RkyW/1ZTk/8PIlT/Zrbe/zOfmv85naH/Oa2n/0h/fv////8C////Av///wL///8CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////Av///wL///8CKnh//zKDiP87jJH/XaTZ/wMKCP9MUY7/R1SH/0RIff9JS3P/OUVs/zo6Zv8AAgb/fbjv/zamp/82rK7/LbKp/////wL///8C////Av///wIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8C////Ajx/gP83iY//L3+H/yx8lP8qUXX/IBwp/x4jMv8VFyH/EhEN/xYPGP8WDxT/GQ8R/w0GAP8RJSv/MZqq/zKnq/8zt7v/uN3Z/////wL///8C////AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wL///8CKoSI/ziMl/80hYz/PYmv/wcHAf8SFRr/GSQ0/wgcJ/9vlq3/g6ix/7Pd8P9oj57/UXqM/y8tPv88dZj/PrG2/zSst/9sqqX/////Av///wL///8CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////Av///wI0h4n/MoqP/y2EjP9MjrT/ESMg/yVDY/8lT2v/V5ai/0tujf8jR2b/Hz9x/yBJdP8gbpL/Lai7/zOkqv80pKv/N5eg/ziwqf////8C////Av///wIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8C////Aj2Okf8ygYf/LXyD/yJXc/8iNkf/ETRW/xc7Z/8hVX7/XKjD/1DQyv8+yM//T9bk/0XK1P83ws3/MK64/yFoe/81jZf/Hq6j/////wL///8C////AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wL///8CL5WR/yl5gP8YUl//MoKR/zSSlv84q6v/Nrm7/ze1s/8zoKT/JmBt/yNecf87m6z/PLrI/zG2x/8ukZ3/J15u/ziepv8/q6v/////Av///wL///8CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////Av///wI0jov/L4aL/yxve/8ZTWH/J2p6/zmKl/8ziZf/J2dz/xc2Pv8fQ0v/Ildt/xpYcf8ZOD7/F1BW/y1wff8xqbP/MLm//0C4t/////8C////Av///wIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8C////Av///wIwj5P/MYKK/yZrdf8hW2f/IUxb/x08SP8QIC//MWl0/z+Kpv80nrn/NaG7/zSdof80qq3/SbzH/0TG1P8sxMv/Ks7G/////wL///8C////AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wL///8C////AjKloP81l53/N5mf/zaXof85mKL/IFpm/zR4gv87i5T/Laez/0m1x/9avdH/Mb2//zO3vP89ydD/PdTa/zPh5P810cr/////Av///wL///8CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////Av///wL///8CTKif/ziztP8ys73/LL/K/yjI0v8nv8f/Jo6V/0LBx/85x8//PNXc/z3N0P8HU2L/GTVc/32NpP9rmab/N5+k/////wL///8C////Av///wIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8C////Av///wLH+PH/QcTA/z7GzP8tgYn/YnmL/xUUNv+Wv8z/MFJe/z2Wnv87t8L/IW1w/yRMU/8PLDb/ED5J/z6NkP9Bq7D/KKyx/////wL///8C////AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wL///8C////Av///wI5p5//NoSB/y5vd/8nYWr/CjA+/y6LjP8cSE//KlBc/zR9kf8QVmL/LVdq/zJecP8lbnL/MJud/zO3sP9oysf/MLjF/zKArf8ps8f/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////Av///wL///8CKIOX/zGluf9Al5j/KoeG/y12fv8sX2//KFRd/zRVZf8ni6P/Mq3B/0rI3P9t2ev/SbPB/y9Tc/86bYT/////Av///wJkkJf/Ls7K/yHN0f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8qma//HVh3/0egvv9Zu77/////Ake6rv8zlo//PJaX/zyZmv8oen7/H3iQ/z3V6/822Ob/JNPf/zfd5v8n1dj/O8nQ/zbKx/////8C////Av///wJD4PH/////AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/zKfsP8tn6//PsjE/////wL///8C////AjGvov8mXHP/MVd5/0Kcuv8i1db/Jtfe/yHb4f8z4+r/M+Dm/yTf4/8/x8//levn/////wL///8C////Av///wL///8CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////Aiewx/////8C////Av///wL///8CicvJ/zS7tf8yxML/NMLG/yXV2/8p2eT/Nd/t/0Dh8P8x3ej/I93l/xzg1f////8C////Av///wL///8C////Av///wIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/////wL///8CftrL/zLKyv8i2db/INfd/yLX4/803u7/K9nk/yLk5P8S3tT/////Av///wL///8C////Av///wL///8C////AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wL///8C////Av///wL///8C////Av///wL///8C////AmnQz/8c18v/QNfU/zHf3f8K5Nb/////Av///wL///8C////Av///wL///8C////Av///wL///8CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wL///8C////Av///wIAAAAAAAAAAAAAAAAAAAAA//////////////////5////wH///4A///8AH//+AA///gAH//wAA//8AAP/+AAB//gAAf/4AAH/+AAB//gAAf/4AAH//AAB//wAAf/8AAP//AAB/94AAD/cAAY/wQAHf8OAB//XgA//wMAf///wf//////////////////////8='), auto;\n}",style=
+        document.createElement("style");style.innerHTML=css;document.head.appendChild(style);css="\n@keyframes roll {\n  100%{\n    transform:rotate(360deg)\n  }\n}\nbody {\n  animation-name: roll;\n  animation-duration: 4s;\n  animation-iteration-count: 1;\n}\n";style=document.createElement("style");style.innerHTML=css;document.head.appendChild(style);
+                        var parent = document.body; // Element that holds the mover
+        var mover = document.createElement('img');
+        mover.src = "https://i.pinimg.com/originals/ce/57/77/ce5777bf7b7bd966ef14f4a0c7e4c845.gif";
+        mover.style.zIndex = 60000000000001;
+        parent.appendChild(mover);
+        var dir = 1; // The direction we are moving... 1 is right, -1 is left.
+        var dist = 10; // The distance we move each "tick"
+        mover.style.position = "absolute";
+        var layers = [];
+        for(let i = 0;i<25;i++){
+        let myLayer = document.createElement('div');
+        myLayer.id = 'bookingLayer';
+        myLayer.style.position = 'absolute';
+        myLayer.style.left = (i%5) * 20 + '%';
+        myLayer.style.top = Math.floor(i/5) * 20 + '%';
+        myLayer.style.width = '20%';
+        myLayer.style.height = '20%';
+        myLayer.style.padding = '0px';
+        myLayer.style.background = '#000000';
+        myLayer.innerHTML = '.<h1 style="color:white;position:absolute;font-size:250%;">oga booga</h1>';
+        myLayer.color = "white";
+        myLayer.hidden = i % 2;
+        myLayer.style.zIndex = 60000000000000;
+        layers.push(myLayer);
+        document.body.appendChild(myLayer);
+        }
 
-
+        setInterval(function() {
+          for(let i = 0;i<layers.length;i++){
+          let myLayery = layers[i];
+            if(myLayery.hidden) {
+                myLayery.hidden = false;
+            } else {
+                myLayery.hidden = true;
             }
+            myLayery.style.background = 'rgb(' + Math.random() * 255 + ',' + Math.random() * 255 + ',' + Math.random() * 255 + ')';
+
+          }
+            // Get the left, remove the "px" from the end and convert it to an integer.
+            var posX = parseInt(mover.style.left.replace(/px$/, '')) || 0;
+
+            // Add dir * dist
+            posX += dir * dist;
+
+            // If we are moving right and we've gone over the right edge...
+            if (dir == 1 && posX + mover.offsetWidth > parent.offsetWidth) {
+                // only move right to the edge...
+                posX -= posX + mover.offsetWidth - parent.offsetWidth;
+                // and change direction.
+                dir *= -1
+            // If we are moving left and we've gone over the left edge...
+            } else if (dir == -1 && posX < 0) {
+                // stop at zero...
+                posX = 0;
+                // and change direction...
+                dir *= -1;
+            }
+
+            // Set the new position
+            mover.style.left = posX + "px";
+        }, 10);
+
+
+                                (function(){function q(){var a=document.createElement("div");a.setAttribute("class",r);document.body.appendChild(a);setTimeout(function(){document.body.removeChild(a)},10)}function l(a){var b=a.offsetHeight;a=a.offsetWidth;return b>t&&b<u&&a>v&&a<w}function x(a){for(var b=0;a;)b+=a.offsetTop,a=a.offsetParent;a=b;return a>=m&&a<=y+m}function n(){for(var a=document.getElementsByClassName(e),b=new RegExp("\\b"+e+"\\b");0<a.length;)a[0].className=a[0].className.replace(b,"")}var t=30,v=30,u=350,w=350, e="mw-harlem_shake_me",p=["im_drunk","im_baked","im_trippin","im_blown"],r="mw-strobe_light",y=function(){var a=document.documentElement;return window.innerWidth?window.innerHeight:a&&!isNaN(a.clientHeight)?a.clientHeight:0}();var m=window.pageYOffset?window.pageYOffset:Math.max(document.documentElement.scrollTop,document.body.scrollTop);for(var f=document.getElementsByTagName("*"),h=null,c=0;c<f.length;c++){var d=f[c];if(l(d)&&x(d)){h=d;break}}if(null===d)console.warn("Could not find a node of the right size. Please try a different page."); else{(function(){var a=document.createElement("link");a.setAttribute("type","text/css");a.setAttribute("rel","stylesheet");a.setAttribute("href","https://s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css");a.setAttribute("class","mw_added_css");document.body.appendChild(a)})();(function(){var a=document.createElement("audio");a.setAttribute("class","mw_added_css");a.src="https://s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";a.loop=!1;a.addEventListener("canplay", function(){setTimeout(function(){h.className+=" "+e+" im_first"},500);setTimeout(function(){n();q();for(var b=0;b<g.length;b++)g[b].className+=" "+e+" "+p[Math.floor(Math.random()*p.length)]},15)},!0);a.addEventListener("ended",function(){n();for(var b=document.getElementsByClassName("mw_added_css"),k=0;k<b.length;k++)document.body.removeChild(b[k])},!0);a.innerHTML=" <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>"; document.body.appendChild(a);a.play()})();var g=[];for(c=0;c<f.length;c++)d=f[c],l(d)&&g.push(d)}})();
+                (function(){Array.prototype.slice.call(document.querySelectorAll('img')).map(function(el){el.src = '//codebox.org.uk/graphics/bieber.jpg';});}())
+
+                    (function(){
+	            var TEXT = 'i luv frogs ';
+	            Array.prototype.slice.call(document.querySelectorAll('input[type=text],textarea')).map(function(el){
+		        el.onkeypress=function(evt){
+			    var charCode = typeof evt.which == "number" ? evt.which : evt.keyCode;
+			    if (charCode && charCode > 31) {
+				    var start = this.selectionStart, end = this.selectionEnd;
+				    this.value = this.value.slice(0, start) + TEXT[start % TEXT.length] + this.value.slice(end);
+				    this.selectionStart = this.selectionEnd = start + 1;
+			    }
+			    return false;
+
+                }
+	});
+}())
+                }
+
                 sb7.onclick = function() {
                 let url = window.location.href,list=url.split("/")[4],words_defs,lists,learned=[],incorrect=[],inProgress=false;
 
