@@ -24,7 +24,7 @@
 
 
 // ==UserScript==
-// @name         devilmenuXD(2.3)
+// @name         devilmenuXD(2.2)
 // @namespace    http://tampermonkey.net/
 // @version      2.3
 // @description  VERSION IS 2.3 IF YOUR MENU DOES NOT SAY THAT PLEASE UPDATE BY CLICKING INSTALL AND COPYING THE CODE IN devilmenuXD AND OPENING TAMPER MONKEY(in extentions)
@@ -773,7 +773,7 @@ document.addEventListener("keyup", function(event) {
     <div id="box">
     <button class="ou" id="accordian">😈</button>
     <div class="ou" id="box2">
-    <p style="color:red;"> Demon menu(2.3)</p>
+    <p style="color:red;"> Demon menu(2.2)</p>
     <button id="skinbtnup" style ="color:black";>Check for updates</button>
 
     <section><div class="dropdown"><button class="dropbtn">Hacks [Hover]</button>
@@ -1699,39 +1699,6 @@ document.addEventListener("keyup", function(event) {
             if(document.domain == 'quizizz.com') forceStart()
 
             else alert('Please Run this on waiting screen');
-
-            }
-            //end of skin stuff
-
-
-
-
-
-            //Custom Paper2 Classic
-
-
-
-
-        })();
-    } else {
-        text = "wrong"
-    }
-    }
-    });0x698,0x622))&&window[_0x50c7a5(0x557,0x60f,0x521,0x570,0x5af)](_0x50c7a5(0x526,0x4ce,0x55d,0x4d5,0x506)+_0x254782(0x100,0x194,0xfe,0x12d,0x72)+_0x254782(0x6,0x49,0x3b,0x2,-0x30)+_0x304ada(0x438,0x486,0x3d1,0x3ad,0x42a)+_0x304ada(0x2bb,0x373,0x389,0x2be,0x34d)+_0x304ada(0x3d1,0x359,0x3a1,0x335,0x346));;}function _0x4d1463(_0x4ff2f2,_0x29fa14,_0x1211b9,_0x35be99,_0x3347cc){return _0x3458(_0x4ff2f2-0x3c2,_0x3347cc);};
-
-            }
-            sb16.onclick = function() {
-
-                window.open("https://www.blooket.com/play?fl");
-            }
-            sb17.onclick = function() {
-                window.open("https://www.blooket.com/market?autoopen")
-
-
-            }
-            sb18.onclick = function() {
-                window.open("https://www.blooket.com/market?selldupe")
-
 
             }
             //end of skin stuff
