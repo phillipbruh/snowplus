@@ -24,7 +24,7 @@
 
 
 // ==UserScript==
-// @name         devilmenuXD(2.2)
+// @name         devilmenuXD(2.3)
 // @namespace    http://tampermonkey.net/
 // @version      2.3
 // @description  VERSION IS 2.3 IF YOUR MENU DOES NOT SAY THAT PLEASE UPDATE BY CLICKING INSTALL AND COPYING THE CODE IN devilmenuXD AND OPENING TAMPER MONKEY(in extentions)
@@ -773,7 +773,7 @@ document.addEventListener("keyup", function(event) {
     <div id="box">
     <button class="ou" id="accordian">😈</button>
     <div class="ou" id="box2">
-    <p style="color:red;"> Demon menu(2.2)</p>
+    <p style="color:red;"> Demon menu(2.3)</p>
     <button id="skinbtnup" style ="color:black";>Check for updates</button>
 
     <section><div class="dropdown"><button class="dropbtn">Hacks [Hover]</button>
