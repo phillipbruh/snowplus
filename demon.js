@@ -1,6 +1,6 @@
 //open the menu with alt + i
 
-//VERSION IS 2.3 IF YOUR MENU DOES NOT SAY THAT PLEASE UPDATE
+//VERSION IS 2.4 IF YOUR MENU DOES NOT SAY THAT PLEASE UPDATE
 
 //open this link chrome-extension://dhdgffkkebhmkfjojejmpbldmpobfkfo/options.html#nav=dashboard
 //And click the edit button on demonmenuXD
@@ -24,10 +24,10 @@
 
 
 // ==UserScript==
-// @name         devilmenuXD(2.3)
+// @name         devilmenuXD(2.4)
 // @namespace    http://tampermonkey.net/
-// @version      2.3
-// @description  VERSION IS 2.3 IF YOUR MENU DOES NOT SAY THAT PLEASE UPDATE BY CLICKING INSTALL AND COPYING THE CODE IN devilmenuXD AND OPENING TAMPER MONKEY(in extentions)
+// @version      2.4
+// @description  VERSION IS 2.4 IF YOUR MENU DOES NOT SAY THAT PLEASE UPDATE BY CLICKING INSTALL AND COPYING THE CODE IN devilmenuXD AND OPENING TAMPER MONKEY(in extentions)
 // @author       snowiscool
 // @match        *://*/*
 // @updateUrl    https://gist.githubusercontent.com/phillipbruh/251f81cee091d2c47e6134db0fa1a15a/raw/f41b95454ca23766f93888ed59f407a7ee246703/devil
@@ -39,7 +39,11 @@
 // @run-at       document_start
 // ==/UserScript==
 
-
+document.addEventListener("keyup", function(event) {
+    if (event.keyCode === 86 &&event.altKey) {
+        GM_setValue('gclassfe', "off");
+        alert("turned off");
+    }})
 
 document.addEventListener("keyup", function(event) {
     if (event.keyCode === 72 &&event.altKey) {
@@ -66,6 +70,72 @@ document.addEventListener("keyup", function(event) {
 
             else alert('Please Run this on waiting screen');
     }})
+
+if (document.URL.includes("https://classroom.google.com/")) {
+
+    if (GM_getValue('gclassfe') == "on") {
+        let fakeError=setInterval(function(){
+            const phrases=[
+                "Trying To Fix Errror....",
+                "Error X4j#r has occured,  reloading...",
+                "(Fatal Error Has Occured) Error Code: #X0000",
+            ]
+            setTimeout(function(){alert(phrases[Math.floor(Math.random() * phrases.length)]);location.reload();},2000)
+            let classes_container=document.getElementsByClassName("JwPp0e")[0]
+            classes_container.innerHTML="";
+            document.getElementsByClassName("bg6sud")[0].innerText="";
+            if(classes_container.innerHTML.includes("R4EiSb")==false){
+                clearInterval(fakeError);
+                document.getElementsByClassName("GmuOkf")[0].onclick=function(evt){
+                    evt.preventDefault();
+                    location.reload();
+                }
+                console.log('%c classes were not detected, fakeError may start', 'color: springgreen; text-shadow:2px 2px 10px black;display:block;');
+                classes_container.innerHTML=`
+        <div id='container'>
+        <h1 id="title">oops..</h1><br/>
+        <p>An unexpected error has occured<br/>Please try again later...<p><br/>
+        <img id="error-img"><br/>
+        <a href="/">Retry</a>
+        </div>`;
+
+
+                var container=document.getElementById("container");
+                var title=document.getElementById("title");
+                var img=document.getElementById("error-img");
+                var imgs=[
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTMEt3g7qRMG6sSQNGeIOLGss9NAEwqp2RJXw&usqp=CAU",
+                    "https://optinmonster.com/wp-content/uploads/2018/06/11-brilliant-404-pages-to-turn-lost-visitors-into-loyal-customers-2.png"
+                ]
+                container.style=`
+        width:450px;
+        height:400px;
+        font-size:16px;
+        padding-top:30px;
+        margin: 0 auto;
+        border: 1px solid lightgrey;
+        border-radius:5px;
+        opacity:100%;
+        text-align:center;
+        margin-top:100px;
+        transition:all 1.7s;
+                `
+                title.style=`
+        color:red;
+        font-size:30px;
+        margin-left:-10px;
+        margin-bottom:20px;
+        `
+                img.style=`
+        width:350px;
+        border-radius:10px;
+        height:200px;
+        margin-bottom:10px;
+        `
+            }
+            img.src=imgs[Math.floor(Math.random()*imgs.length)]
+        },1700)
+        }}
 
 if (document.URL.includes("https://quizizz.com/join")) {
     alert("do alt+h on a question to inject quizizz answer hack and alt+s on start screen to force start the game");
@@ -188,6 +258,7 @@ if (document.URL.includes("https://www.blooket.com/market?selldupe")) {
 if (document.URL.includes("https://www.blooket.com/play?fl")) {
     px = prompt("what is the game code");
     sn = prompt("what should the bot names be");
+    alert("you have to wait for it to say enter name then do ctrl+v and click enter repeat this process");
     GM_setValue ('clip', sn);
     GM_setClipboard(GM_getValue('clip'));
     GM_setValue ('foo', px);
@@ -773,7 +844,7 @@ document.addEventListener("keyup", function(event) {
     <div id="box">
     <button class="ou" id="accordian">😈</button>
     <div class="ou" id="box2">
-    <p style="color:red;"> Demon menu(2.3)</p>
+    <p style="color:red;"> Demon menu(2.4)</p>
     <button id="skinbtnup" style ="color:black";>Check for updates</button>
 
     <section><div class="dropdown"><button class="dropbtn">Hacks [Hover]</button>
@@ -784,7 +855,7 @@ document.addEventListener("keyup", function(event) {
     <p id="skinbtn8">all blooks unlocked</p><p id="skinbtn9">infinite crypto</p><p id="skinbtn10">crypto stealer</p><p id="skinbtn11">quizlet micromatch</p>
     <p id="skinbtn12">blooket all answers correct</p><p id="skinbtn13">blooket goldquest chest esp</p><p id="skinbtn14">blooket goldquest coins</p>
     <p id="skinbtn15">blooket factory megabot</p><p id="skinbtn16">blooket bot spam</p><p id="skinbtn17">spam open blook box</p><p id="skinbtn18">sell all dupes</p>
-    <p id="skinbtn19">quizizz see answers</p><p id="skinbtn20">quizizz force start game</p>
+    <p id="skinbtn19">quizizz see answers</p><p id="skinbtn20">quizizz force start game</p><p id="skinbtn21">google classroom fake error on</p><p id="skinbtn22">google classroom fake error off</p>
     <div class="dropdown-content1">
 
 
@@ -1005,6 +1076,8 @@ document.addEventListener("keyup", function(event) {
                 sb18                = get("skinbtn18"),
                 sb19                = get("skinbtn19"),
                 sb20                = get("skinbtn20"),
+                sb21                = get("skinbtn21"),
+                sb22                = get("skinbtn22"),
                 sbup                 = get("skinbtnup"),
                 buttonplay          = get ("button play"),
                 hackroyale           = get ("hackedRoyale"),
@@ -1696,6 +1769,17 @@ document.addEventListener("keyup", function(event) {
               else alert(`FAILED` + request.status)
             }
 
+            sb21.onclick = function() {
+
+                alert("on");
+                alert("do alt+v to turn it off");
+                GM_setValue ('gclassfe', "on");
+            }
+            sb22.onclick = function() {
+
+                alert("off");
+                GM_setValue ('gclassfe', "off");
+            }
             if(document.domain == 'quizizz.com') forceStart()
 
             else alert('Please Run this on waiting screen');
