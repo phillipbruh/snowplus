@@ -1,6 +1,6 @@
 //open the menu with alt + i
 
-//VERSION IS 2.6 IF YOUR MENU DOES NOT SAY THAT PLEASE UPDATE
+//VERSION IS 2.7 IF YOUR MENU DOES NOT SAY THAT PLEASE UPDATE
 
 //download:https://github.com/phillipbruh/snowplus/raw/main/demon.user.js
 
@@ -19,10 +19,10 @@
 
 
 // ==UserScript==
-// @name         devilmenuXD(2.6)
+// @name         devilmenuXD(2.7)
 // @namespace    http://tampermonkey.net/
-// @version      2.6
-// @description  VERSION IS 2.6 IF YOUR MENU DOES NOT SAY THAT PLEASE UPDATE BY CLICKING INSTALL AND COPYING THE CODE IN devilmenuXD AND OPENING TAMPER MONKEY(in extentions)
+// @version      2.7
+// @description  Devlog: +quizlet live -force start quizizz       VERSION IS 2.7 IF YOUR MENU DOES NOT SAY THAT PLEASE UPDATE BY CLICKING INSTALL AND COPYING THE CODE IN devilmenuXD AND OPENING TAMPER MONKEY(in extentions)
 // @author       snowiscool
 // @match        *://*/*
 // @updateUrl    https://gist.githubusercontent.com/phillipbruh/251f81cee091d2c47e6134db0fa1a15a/raw/f41b95454ca23766f93888ed59f407a7ee246703/devil
@@ -201,7 +201,7 @@ if (document.URL.includes("https://www.blooket.com/market?autoopen")) {
 }
 
 
-   
+
 if (document.URL.includes("https://www.blooket.com/market?selldupe")) {
     gh = confirm("want to automaticly inject?");
     if(gh === true){
@@ -852,7 +852,7 @@ document.addEventListener("keyup", function(event) {
     <div id="box">
     <button class="ou" id="accordian">😈</button>
     <div class="ou" id="box2">
-    <p style="color:red;"> Demon menu(2.6)</p>
+    <p style="color:red;"> Demon menu(2.7)</p>
     <button id="skinbtnup" style ="color:black";>Check for updates</button>
 
     <section><div class="dropdown"><button class="dropbtn">Hacks [Hover]</button>
@@ -866,7 +866,7 @@ document.addEventListener("keyup", function(event) {
     <div class="dropdown-content1">
     <p id="skinbtn15">blooket factory megabot</p><p id="skinbtn16">blooket bot spam</p><p id="skinbtn17">spam open blook box</p><p id="skinbtn18">sell all dupes</p>
     <p id="skinbtn19">quizizz see answers</p><p id="skinbtn20">quizizz force start game</p><p id="skinbtn21">google classroom fake error on</p><p id="skinbtn22">answer any question(almost)</p>
-    <p id="skinbtn23">google snake hack</p><p id="skinbtn24">duolingo auto answer</p>
+    <p id="skinbtn23">google snake hack</p><p id="skinbtn24">duolingo auto answer</p><p id="skinbtn25">quizlet live show answers</p>
     </div>
 
     <div class="dropdown-content3"></div>
@@ -880,7 +880,7 @@ document.addEventListener("keyup", function(event) {
 
     <style>
     #box {
-    z-index: 3;
+    z-index: 0;
     position: absolute;
     top: 170px;
     //256 is defult
@@ -891,7 +891,7 @@ document.addEventListener("keyup", function(event) {
     display: grid;}
     section {
     display: flex;
-    justify-content: space-between;margin:5px;}
+    justify-content: space-between;margin:9px;}
     .ou {
     background-color: #363c3d;
     letter-spacing: 2px;
@@ -900,7 +900,7 @@ document.addEventListener("keyup", function(event) {
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     color:white;}
-    p { text-align: center;border-bottom:1px solid white;}
+    p { text-align: center;border-bottom:0px solid white;}
     #ytlink { border:0;}
     #ytlink a{ color:lime;}
     #accordian {
@@ -1089,6 +1089,7 @@ document.addEventListener("keyup", function(event) {
                 sb22                = get("skinbtn22"),
                 sb23                = get("skinbtn23"),
                 sb24                = get("skinbtn24"),
+                sb25                = get("skinbtn25"),
                 sbup                 = get("skinbtnup"),
                 buttonplay          = get ("button play"),
                 hackroyale           = get ("hackedRoyale"),
@@ -1891,7 +1892,9 @@ document.addEventListener("keyup", function(event) {
                 (function(e){var t={eval:'"const DEBUG=!0;let mainInterval;const dataTestComponentClassName=\\"e4VJZ\\",TIME_OUT=1e3,CHARACTER_SELECT_TYPE=\\"characterSelect\\",CHARACTER_MATCH_TYPE=\\"characterMatch\\",TRANSLATE_TYPE=\\"translate\\",LISTEN_TAP_TYPE=\\"listenTap\\",NAME_TYPE=\\"name\\",COMPLETE_REVERSE_TRANSLATION_TYPE=\\"completeReverseTranslation\\",LISTEN_TYPE=\\"listen\\",SELECT_TYPE=\\"select\\",JUDGE_TYPE=\\"judge\\",FORM_TYPE=\\"form\\",LISTEN_COMPREHENSION_TYPE=\\"listenComprehension\\",READ_COMPREHENSION_TYPE=\\"readComprehension\\",CHARACTER_INTRO_TYPE=\\"characterIntro\\",DIALOGUE_TYPE=\\"dialogue\\",SELECT_TRANSCRIPTION_TYPE=\\"selectTranscription\\",SPEAK_TYPE=\\"speak\\",SELECT_PRONUNCIATION_TYPE=\\"selectPronunciation\\",CHALLENGE_CHOICE_CARD=\'[data-test=\\"challenge-choice-card\\"]\',CHALLENGE_CHOICE=\'[data-test=\\"challenge-choice\\"]\',CHALLENGE_TRANSLATE_INPUT=\'[data-test=\\"challenge-translate-input\\"]\',CHALLENGE_LISTEN_TAP=\'[data-test=\\"challenge-listenTap\\"]\',CHALLENGE_JUDGE_TEXT=\'[data-test=\\"challenge-judge-text\\"]\',CHALLENGE_TEXT_INPUT=\'[data-test=\\"challenge-text-input\\"]\',CHALLENGE_TAP_TOKEN=\'[data-test=\\"challenge-tap-token\\"]\',PLAYER_NEXT=\'[data-test=\\"player-next\\"]\',PLAYER_SKIP=\'[data-test=\\"player-skip\\"]\',BLAME_INCORRECT=\'[data-test=\\"blame blame-incorrect\\"]\',CHARACTER_MATCH=\'[data-test=\\"challenge challenge-characterMatch\\"]\',clickEvent=new MouseEvent(\\"click\\",{view:window,bubbles:!0,cancelable:!0});function getChallengeObj(e){let t=null;if(e instanceof Array)for(let c=0;c<e.length&&!(t=getChallengeObj(e[c]));c++);else for(let c in e){if(\\"challenge\\"==c&&\\"object\\"==typeof e[c])return e;if((e[c]instanceof Object||e[c]instanceof Array)&&(t=getChallengeObj(e[c])))break}return t}function getChallenge(){const e=document.getElementsByClassName(dataTestComponentClassName)[0];if(e){const t=e[Object.keys(e).filter(e=>/^__reactProps/g.test(e))[0]],{challenge:c}=getChallengeObj(t);return c}return document.querySelectorAll(PLAYER_NEXT)[0].dispatchEvent(clickEvent),null}function pressEnter(){document.dispatchEvent(new KeyboardEvent(\\"keydown\\",{keyCode:13,which:13}))}function dynamicInput(e,t){let c=e,n=c.value;c.value=t;let E=new Event(\\"input\\",{bubbles:!0});E.simulated=!0;let o=c._valueTracker;o&&o.setValue(n),c.dispatchEvent(E)}function classify(){const e=getChallenge();if(e)switch(DEBUG&&console.log(`${e.type}`,e),e.type){case SELECT_PRONUNCIATION_TYPE:case READ_COMPREHENSION_TYPE:case LISTEN_COMPREHENSION_TYPE:case FORM_TYPE:{const{choices:t,correctIndex:c}=e;return DEBUG&&console.log(\\"READ_COMPREHENSION LISTEN_COMPREHENSION FORM\\",{choices:t,correctIndex:c}),document.querySelectorAll(CHALLENGE_CHOICE)[c].dispatchEvent(clickEvent),{choices:t,correctIndex:c}}case SELECT_TYPE:case CHARACTER_SELECT_TYPE:{const{choices:t,correctIndex:c}=e;return DEBUG&&console.log(\\"SELECT CHARACTER_SELECT\\",{choices:t,correctIndex:c}),document.querySelectorAll(CHALLENGE_CHOICE_CARD)[c].dispatchEvent(clickEvent),{choices:t,correctIndex:c}}case CHARACTER_MATCH_TYPE:{const{pairs:t}=e,c=document.querySelectorAll(CHALLENGE_TAP_TOKEN);return t.forEach(e=>{for(let t=0;t<c.length;t++)c[t].innerText!==e.transliteration&&c[t].innerText!==e.character||c[t].dispatchEvent(clickEvent)}),{pairs:t}}case TRANSLATE_TYPE:{const{correctTokens:t,correctSolutions:c}=e;if(DEBUG&&console.log(\\"TRANSLATE\\",{correctTokens:t}),t){const e=document.querySelectorAll(CHALLENGE_TAP_TOKEN);let c=[];for(let n in t)for(let E in e){const o=e[E];if(!c.includes(E)&&o.innerText===t[n]){o.dispatchEvent(clickEvent),c.push(E),DEBUG&&console.log(`correctTokenIndex [${t[n]}] - tokenIndex [${o.innerText}]`);break}}}else if(c){dynamicInput(document.querySelectorAll(CHALLENGE_TRANSLATE_INPUT)[0],c[0])}return{correctTokens:t}}case NAME_TYPE:{const{correctSolutions:t}=e;return DEBUG&&console.log(\\"NAME\\",{correctSolutions:t}),dynamicInput(document.querySelectorAll(CHALLENGE_TEXT_INPUT)[0],t[0]),{correctSolutions:t}}case COMPLETE_REVERSE_TRANSLATION_TYPE:{const{displayTokens:t}=e;DEBUG&&console.log(\\"COMPLETE_REVERSE_TRANLATION\\",{displayTokens:t});const{text:c}=t.filter(e=>e.isBlank)[0];return dynamicInput(document.querySelectorAll(CHALLENGE_TEXT_INPUT)[0],c),{displayTokens:t}}case LISTEN_TAP_TYPE:{const{correctTokens:t}=e;DEBUG&&console.log(\\"LISTEN_TAP\\",{correctTokens:t});const c=document.querySelectorAll(CHALLENGE_TAP_TOKEN);for(let e in t)c.forEach(c=>{c.innerText===t[e]&&c.dispatchEvent(clickEvent)});return{correctTokens:t}}case LISTEN_TYPE:{const{prompt:t}=e;return DEBUG&&console.log(\\"LISTEN\\",{prompt:t}),dynamicInput(document.querySelectorAll(CHALLENGE_TRANSLATE_INPUT)[0],t),{prompt:t}}case JUDGE_TYPE:{const{correctIndices:t}=e;return DEBUG&&console.log(\\"JUDGE\\",{correctIndices:t}),document.querySelectorAll(CHALLENGE_JUDGE_TEXT)[t[0]].dispatchEvent(clickEvent),{correctIndices:t}}case DIALOGUE_TYPE:case CHARACTER_INTRO_TYPE:case SELECT_TRANSCRIPTION_TYPE:{const{choices:t,correctIndex:c}=e;return DEBUG&&console.log(\\"DIALOGUE CHARACTER_INTRO\\",{choices:t,correctIndex:c}),document.querySelectorAll(CHALLENGE_JUDGE_TEXT)[c].dispatchEvent(clickEvent),{choices:t,correctIndex:c}}case SPEAK_TYPE:{const{prompt:t}=e;return DEBUG&&console.log(\\"SPEAK\\",{prompt:t}),document.querySelectorAll(PLAYER_SKIP)[0].dispatchEvent(clickEvent),{prompt:t}}}}function breakWhenIncorrect(){document.querySelectorAll(BLAME_INCORRECT).length>0&&(console.log(\\"Incorrect, stopped\\"),clearInterval(mainInterval))}function main(){try{\\"CONTINUE\\"!==document.querySelectorAll(PLAYER_NEXT)[0].textContent.toUpperCase().valueOf()&&(classify(),breakWhenIncorrect(),pressEnter()),setTimeout(pressEnter,150)}catch(e){console.log(e)}}function solveChallenge(){mainInterval=setInterval(main,TIME_OUT),console.log(`to stop run this command clearInterval(${mainInterval})`)}solveChallenge();"'},c=!0;if("object"==typeof this.artoo&&(artoo.settings.reload||(artoo.log.verbose("artoo already exists within this page. No need to inject him again."),artoo.loadSettings(t),artoo.exec(),c=!1)),c){var n=document.getElementsByTagName("body")[0];n||(n=document.createElement("body"),document.firstChild.appendChild(n));var o=document.createElement("script");console.log("artoo.js is loading..."),o.src="//medialab.github.io/artoo/public/dist/artoo-latest.min.js",o.type="text/javascript",o.id="artoo_injected_script",o.setAttribute("settings",JSON.stringify(t)),n.appendChild(o)}}).call(this);
 
             }
-
+            sb25.onclick = function() {
+                window.open("https://chrome.google.com/webstore/detail/quizlet-rocks/pgbnfimhfgoibnimmfoeacjehkecgkmk");
+            }
             //end of skin stuff
 
 
