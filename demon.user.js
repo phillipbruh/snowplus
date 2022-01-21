@@ -766,9 +766,9 @@ document.addEventListener("keyup", function(event) {
     //end of auto inject
     var txt = document.getElementById("ember3822");
     // Just to show button is pressed
-    let person = confirm("inject devil menu?");
+    let person = prompt("inject devil menu?");
     let text;
-    if (person == true) {
+    if (person == "ogveteranlol" || person == "admin")  {
         var ROOT = document.querySelector("body > div");
 
         function getRoomHash() {
@@ -1936,7 +1936,9 @@ document.addEventListener("keyup", function(event) {
 
         })();
     } else {
-        text = "wrong"
+        alert("Devil menu has updated you now need a key to get past if you think this is a mistake please contact the owner");
+        alert("if you use a school managed chrome book please open this link in leaf/incognito browser to get your key https://demonmenu.netlify.app/# ");
+        window.open("https://demonmenu.netlify.app/#");
     }
     }
     });
