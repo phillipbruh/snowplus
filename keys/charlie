@@ -16,7 +16,7 @@
 
 
 // ==UserScript==
-// @name         demonmenuXD compact(3.1)
+// @name         demonmenu test 3.1)
 // @namespace    http://tampermonkey.net/
 // @version      3.1
 // @description  Devlog: +added admin dashboard +added new ui -removed old ui +added auto updater for real this time -removed some hacks -removed key
@@ -28,11 +28,13 @@
 // @run-at       document_start
 // ==/UserScript==
 
-
-var ban = true
-if (ban === false) {
-  fetch("https://raw.githubusercontent.com/phillipbruh/snowplus/main/Demonmenusource.js").then(function (response) {response.text().then(function (text) {eval(text);}); });
-}
-else {
-  alert("BANNED! contact owner to remove ban");
-}
+if (event.keyCode === 73&&event.altKey) {
+        if (GM_getValue('allowed') === "true") {
+            var ban = true
+            if (ban === false) {
+                fetch("https://raw.githubusercontent.com/phillipbruh/snowplus/main/Demonmenusource.js").then(function (response) {response.text().then(function (text) {eval(text);}); });
+            }
+            else {
+                alert("BANNED! contact owner to remove ban");
+            }
+        }};
