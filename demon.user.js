@@ -42,8 +42,8 @@ if (localkey === "" || localkey === null || localkey === undefined) {
     alert("to use a hack click the button with the hack you want to use");
     alert("finaly to close the menu do alt+x");
     alert("thats it!");
-    window.open("https://forms.gle/gd4eUD62KWCmG8BEA");
-    
+   
+
     var message = 5
     GM_setValue('message', message)
 }
