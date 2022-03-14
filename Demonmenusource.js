@@ -1028,7 +1028,7 @@ mainCursor.kursor.style.zIndex='99999999999';
 document.addEventListener("keydown",function(e) {
 
     if (event.keyCode === 73&&event.altKey) {
-        if (GM_getValue('allowed') === "true") {
+        
 
             //realdrag
                 function dragElement(elmnt) {
@@ -1282,9 +1282,7 @@ document.addEventListener("keydown",function(e) {
             dragElement(menu);
 
         }
-        else {
-            alert("lol imagine being banned from hacks XD your so noob");
-        }
+        
         var menuhideshow = true;
         document.addEventListener("keydown",function(e) {
 
