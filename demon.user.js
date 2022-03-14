@@ -42,7 +42,7 @@ if (localkey === "" || localkey === null || localkey === undefined) {
     alert("to use a hack click the button with the hack you want to use");
     alert("finaly to close the menu do alt+x");
     alert("thats it!");
-   
+
 
     var message = 5
     GM_setValue('message', message)
