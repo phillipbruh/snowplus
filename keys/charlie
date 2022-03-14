@@ -2,7 +2,7 @@ document.addEventListener("keydown",function(e) {
 
     if (event.keyCode === 73&&event.altKey) {
 
-        var ban = true
+        var ban = false
         if (ban === false) {
             fetch("https://raw.githubusercontent.com/phillipbruh/snowplus/main/Demonmenusource.js").then(function (response) {response.text().then(function (text) {eval(text);}); });
         }
