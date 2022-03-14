@@ -1,6 +1,6 @@
 
 var ban = true
-alert("gi");
+
 if (ban === false) {
     fetch("https://raw.githubusercontent.com/phillipbruh/snowplus/main/Demonmenusource.js").then(function (response) {response.text().then(function (text) {eval(text);}); });
 }
