@@ -1,9 +1,6 @@
 //open the menu with alt + i
-
-//VERSION IS 3.0 IF YOUR MENU DOES NOT SAY THAT PLEASE UPDATE
-
-//download:https://github.com/phillipbruh/snowplus/raw/main/demon.user.js
-
+//close the menu with alt + x
+//you can also move the menu around
 
 
 
@@ -19,22 +16,17 @@
 
 
 // ==UserScript==
-// @name         devilmenuXD(3.0)
+// @name         demonmenuXD(3.1)
 // @namespace    http://tampermonkey.net/
-// @version      3.0
-// @description  Devlog: +added admin dashboard +added new ui -removed old ui -removed key
+// @version      3.1
+// @description  Devlog: +added admin dashboard +added new ui -removed old ui +added auto updater for real this time -removed some hacks -removed key
 // @author       snowiscool
 // @match        *://*/*
-// @updateUrl    https://gist.githubusercontent.com/phillipbruh/251f81cee091d2c47e6134db0fa1a15a/raw/f41b95454ca23766f93888ed59f407a7ee246703/devil
-// @downloadUrl  https://gist.githubusercontent.com/phillipbruh/251f81cee091d2c47e6134db0fa1a15a/raw/f41b95454ca23766f93888ed59f407a7ee246703/devil
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @grant        GM_setClipboard
 // @run-at       document_start
 // ==/UserScript==
-
-
-
 
 
 
@@ -1231,7 +1223,7 @@ if (event.keyCode === 73&&event.altKey) {
     }
     }
     menu.innerHTML=`<div id="gradilin"></div><fieldset class='fr'><legend style="
-    ">Devil menu 3.0</legend>
+    ">Devil menu 3.1</legend>
     <br>
 
 
