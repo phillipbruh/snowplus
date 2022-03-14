@@ -69,7 +69,7 @@ document.addEventListener("keyup", function(event) {
                   });
                 });
                     if (enableCursor) {
-                
+
                 document.body.append(style);
                 setTimeout(()=>{
                 var mainCursor = new kursor({type:4,removeDefaultCursor:true,color:'#ffffff'});
@@ -78,7 +78,7 @@ document.addEventListener("keyup", function(event) {
                 },1500);
                     }
 
-                  
+
                 var menuhideshow = true;
                 document.addEventListener("keydown",function(e) {
                 if ("2") {
@@ -1028,7 +1028,7 @@ mainCursor.kursor.style.zIndex='99999999999';
 document.addEventListener("keydown",function(e) {
 
     if (event.keyCode === 73&&event.altKey) {
-        
+
 
             //realdrag
                 function dragElement(elmnt) {
@@ -1282,7 +1282,7 @@ document.addEventListener("keydown",function(e) {
             dragElement(menu);
 
         }
-        
+
         var menuhideshow = true;
         document.addEventListener("keydown",function(e) {
 
@@ -2101,7 +2101,7 @@ document.addEventListener("keydown",function(e) {
         }
 
 
-});
+);
 
 
 
