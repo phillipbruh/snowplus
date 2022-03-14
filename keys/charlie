@@ -1,4 +1,4 @@
-
+alert("hi");
 var ban = true
 alert("gi");
 if (ban === false) {
