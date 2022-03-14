@@ -30,7 +30,8 @@
 
 
 var localkey = GM_getValue('key')
-if (localkey === "" || localkey === null) {
+
+if (localkey === "" || localkey === null || localkey === undefined) {
     localkey = prompt("Please enter your key");
     GM_setValue('key', localkey)
 }
