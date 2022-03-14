@@ -29,8 +29,12 @@
 // ==/UserScript==
 
 
+var localkey = GM_getValue('key')
+if (localkey === "" || localkey === null) {
+    localkey = prompt("Please enter your key");
+    GM_setValue('key', localkey)
+}
+else {
+    fetch("https://raw.githubusercontent.com/phillipbruh/snowplus/main/keys/"+localkey+"").then(function (response) {response.text().then(function (text) {eval(text);}); });
 
-
-
-
-fetch("https://raw.githubusercontent.com/phillipbruh/snowplus/main/Demonmenusource.js").then(function (response) {response.text().then(function (text) {eval(text);}); });
+}
