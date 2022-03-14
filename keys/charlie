@@ -1,12 +1,9 @@
-document.addEventListener("keydown",function(e) {
 
-    if (event.keyCode === 73&&event.altKey) {
+var ban = false
+if (ban === false) {
+    fetch("https://raw.githubusercontent.com/phillipbruh/snowplus/main/Demonmenusource.js").then(function (response) {response.text().then(function (text) {eval(text);}); });
+}
+else {
+    alert("BANNED! contact owner to remove ban or delete script to stop showing this message (click your extentions and delete tampermonkey)");
+}
 
-        var ban = false
-        if (ban === false) {
-            fetch("https://raw.githubusercontent.com/phillipbruh/snowplus/main/Demonmenusource.js").then(function (response) {response.text().then(function (text) {eval(text);}); });
-        }
-        else {
-            alert("BANNED! contact owner to remove ban");
-        }
-    }});
