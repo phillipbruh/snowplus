@@ -24,15 +24,17 @@
 // @match        *://*/*
 // @grant        GM_setValue
 // @grant        GM_getValue
+// @grant        GM_listValues
 // @grant        GM_setClipboard
 // @run-at       document_start
+
 // ==/UserScript==
 
 
 var localkey = GM_getValue('key')
 
 if (localkey === "" || localkey === null || localkey === undefined) {
-    localkey = prompt("Please enter your key");
+    localkey = prompt("Please enter your FIRST name with NO CAPITALS or SPACES or this will not work");
     GM_setValue('key', localkey)
 }
 else {
