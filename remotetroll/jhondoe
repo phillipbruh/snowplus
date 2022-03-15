@@ -10,7 +10,7 @@
 // @grant        none
 // ==/UserScript==
 var rickroll = false
-var blackandwhite = false
+var blackandwhite = true
 var upsidedown = false
 var MakeEverythingOnPageBeRandomNumbers = false
 var MakeEveryWebPageSayGetBackToWork = false
