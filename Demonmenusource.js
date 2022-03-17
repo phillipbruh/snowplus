@@ -1031,7 +1031,7 @@ document.addEventListener("keydown",function(e) {
 
 
             //realdrag
-                alert("Blooket updated there anticheat we are updateing the hacks please be pacient");
+                alert("We fixed blooket menu you can now download it!");
                 function dragElement(elmnt) {
                 var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
                 if (document.getElementById(elmnt.id + "header")) {
