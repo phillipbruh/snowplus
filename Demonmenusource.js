@@ -1,4 +1,26 @@
 
+
+
+
+
+
+
+
+
+
+// ==UserScript==
+// @name         demonmenuXD(3.2) source
+// @namespace    http://tampermonkey.net/
+// @version      3.2
+// @description  Devlog: +added admin dashboard +added new ui -removed old ui +added auto updater for real this time -removed some hacks -removed key
+// @author       snowiscool
+// @match        *://*/*
+// @grant        GM_setValue
+// @grant        GM_getValue
+// @grant        GM_setClipboard
+// @run-at       document_start
+// ==/UserScript==
+
 if ( document.URL.includes("https://student.readingplus.com/") ) {
 
       var rer = confirm("want to automaticly inject");
