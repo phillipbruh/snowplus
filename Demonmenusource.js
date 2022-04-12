@@ -698,7 +698,7 @@ if ( document.URL.includes("https://student.readingplus.com/") ) {
       var rer = confirm("want to automaticly inject");
 
       if (rer == true) {
-            alert("if name does not say 'INJECTED' as the first name please reload the page untill it does");
+            alert("if name does not say 'INJECTED' as the first name please reload the page until it does if you have reloaded a bunch and it still does not work please close the tab and open it again");
             var rat = GM_getValue("rat")
 
             var rered = GM_getValue("rered")
