@@ -53,10 +53,5 @@ else {
 
         }
     else {
-        alert("this window will go away after 5 times so that you get the message");
-        alert("if the menu does not work it means you do not have a account make one here: https://forms.gle/gd4eUD62KWCmG8BEA");
-        message = GM_getValue('message')
-        message = message - 1
-        GM_setValue('message', message)
     }
 }
