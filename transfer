@@ -1,0 +1,50 @@
+// ==UserScript==
+// @name         New Userscript
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        *://*/*
+// @grant        GM_setValue
+// @grant        GM_getValue
+// @grant        GM_listValues
+// @grant        GM_setClipboard
+// @grant        getTime
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=bing.com
+// @grant        none
+// ==/UserScript==
+alert("hi");
+const d = new Date();
+if (GM_getValue("expire") == undefined) {
+
+    alert("checking login");
+    window.open("https://exp.lol/checklog");
+    if ( document.URL.includes("https://exp.lol/checklog/") ) {
+        var ftimeexp = d.getTime() + 86400000
+        GM_setValue("expire", ftimeexp)
+        alert("Login successful key for 24h");
+    }
+    else {
+        alert("Login failed please login to the website to continue once you login ask me for the role so you can use the menu");
+        window.open("https://exp.lol/");
+    }
+
+}
+alert("hi");
+
+
+if (GM_getValue("expire") <= d.getTime()) {
+    alert("key expired please getting a new one");
+    alert("checking login");
+    window.open("https://exp.lol/checklog");
+    if ( document.URL.includes("https://exp.lol/checklog/") ) {
+        var timeexp = d.getTime() + 86400000
+        GM_setValue("expire", timeexp)
+        alert("Login successful key for 24h");
+    }
+    else {
+        alert("Login failed please login to the website to continue once you login ask me for the role so you can use the menu");
+        window.open("https://exp.lol/");
+    }}
+
+alert("hi");
