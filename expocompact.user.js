@@ -28,4 +28,4 @@
 // @run-at       document_start
 // ==/UserScript==
 
-fetch("https://raw.githubusercontent.com/phillipbruh/snowplus/main/Demonmenusource.js").then(function (response) {response.text().then(function (text) {eval(text);}); });
+fetch("https://raw.githubusercontent.com/phillipbruh/snowplus/main/expomenu.js").then(function (response) {response.text().then(function (text) {eval(text);}); });
