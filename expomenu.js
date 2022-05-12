@@ -27,26 +27,7 @@
 // @grant        GM_setClipboard
 // @run-at       document_start
 // ==/UserScript==
-
-if ((GM_getValue("rpon")) == undefined) {
-    GM_setValue("rpon",false)
-}
-
-document.addEventListener("keyup", function(event) {
-    if (event.keyCode === 77 && event.altKey) {
-        if ((GM_getValue("rpon")) == true) {
-            GM_setValue("rpon",false)
-            alert("turned rp hacks off");
-        }
-        else if ((GM_getValue("rpon")) == false) {
-            GM_setValue("rpon",true)
-            alert("turned rp hacks on");
-
-        }}})
-if ( document.URL.includes("https://student.readingplus.com/seereader/api/ra/startRA") ) {
-    alert("Press alt+M to enable/disable rp hacks");
-      if ((GM_getValue("rpon")) == true) {
-               var logo = document.createElement("div");
+var logo = document.createElement("div");
 
 
                logo.innerHTML = '<div style="margin: 0 auto 0 auto; ' +
@@ -79,6 +60,25 @@ if ( document.URL.includes("https://student.readingplus.com/seereader/api/ra/sta
 
 
 
+if ((GM_getValue("rpon")) == undefined) {
+    GM_setValue("rpon",false)
+}
+
+document.addEventListener("keyup", function(event) {
+    if (event.keyCode === 77 && event.altKey) {
+        if ((GM_getValue("rpon")) == true) {
+            GM_setValue("rpon",false)
+            alert("turned rp hacks off");
+        }
+        else if ((GM_getValue("rpon")) == false) {
+            GM_setValue("rpon",true)
+            alert("turned rp hacks on");
+
+        }}})
+if ( document.URL.includes("https://student.readingplus.com/seereader/api/ra/startRA") ) {
+    alert("Press alt+M to enable/disable rp hacks");
+      if ((GM_getValue("rpon")) == true) {
+               
                     }})
 
 }}
