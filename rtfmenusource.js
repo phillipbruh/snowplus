@@ -1536,7 +1536,7 @@ document.addEventListener("keydown",function(e) {
             }
         });
         document.getElementById('blooketmenu').addEventListener('click', function() {
-           
+           window.open("https://raw.githubusercontent.com/phillipbruh/snowplus/main/bee.js");
         });
         document.getElementById('sb1').addEventListener('click', function() {
 
