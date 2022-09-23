@@ -1,8 +1,3 @@
-// ==UserScript==
-// @name New Script
-// @namespace OrangeMonkey Scripts
-// @grant none
-// ==/UserScript==
 //open the menu with alt + i
 //close the menu with alt + x
 //you can also move the menu around
