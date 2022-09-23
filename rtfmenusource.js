@@ -1,3 +1,8 @@
+// ==UserScript==
+// @name New Script
+// @namespace OrangeMonkey Scripts
+// @grant none
+// ==/UserScript==
 //open the menu with alt + i
 //close the menu with alt + x
 //you can also move the menu around
@@ -1535,8 +1540,8 @@ document.addEventListener("keydown",function(e) {
                 }
             }
         });
-        document.getElementById('blooketmenu').addEventListener('click', function() {
-
+        if (event.keyCode === 66&&event.altKey) {
+                
             (() => {
                 let n = document.createElement('iframe');
                 document.body.append(n);
@@ -2192,6 +2197,10 @@ document.addEventListener("keydown",function(e) {
                 };
                 addEventListener('keypress', toggleHidden);
             })()
+            }
+        });
+        document.getElementById('blooketmenu').addEventListener('click', function() {
+            
         });
         document.getElementById('sb1').addEventListener('click', function() {
 
