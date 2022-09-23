@@ -2200,7 +2200,7 @@ document.addEventListener("keydown",function(e) {
             }
         });
         document.getElementById('blooketmenu').addEventListener('click', function() {
-            
+            alert("press alt+b to load");
         });
         document.getElementById('sb1').addEventListener('click', function() {
 
