@@ -1460,11 +1460,452 @@ if (document.URL.includes("https://www.blooket.com/play?fl")) {
     GM_setValue ('foo', px);
     window.open("https://www.blooket.com/play?id="+px);
 }
-if (document.URL.includes("https://www.duolingo.com/skill/")) {
+if (document.URL.includes("https://www.duolingo.com/lesson")) {
     var r = confirm("want to automaticly inject");
       if (r == true) {
-          (function(e){var t={eval:'"const DEBUG=!0;let mainInterval;const dataTestComponentClassName=\\"e4VJZ\\",TIME_OUT=1e3,CHARACTER_SELECT_TYPE=\\"characterSelect\\",CHARACTER_MATCH_TYPE=\\"characterMatch\\",TRANSLATE_TYPE=\\"translate\\",LISTEN_TAP_TYPE=\\"listenTap\\",NAME_TYPE=\\"name\\",COMPLETE_REVERSE_TRANSLATION_TYPE=\\"completeReverseTranslation\\",LISTEN_TYPE=\\"listen\\",SELECT_TYPE=\\"select\\",JUDGE_TYPE=\\"judge\\",FORM_TYPE=\\"form\\",LISTEN_COMPREHENSION_TYPE=\\"listenComprehension\\",READ_COMPREHENSION_TYPE=\\"readComprehension\\",CHARACTER_INTRO_TYPE=\\"characterIntro\\",DIALOGUE_TYPE=\\"dialogue\\",SELECT_TRANSCRIPTION_TYPE=\\"selectTranscription\\",SPEAK_TYPE=\\"speak\\",SELECT_PRONUNCIATION_TYPE=\\"selectPronunciation\\",CHALLENGE_CHOICE_CARD=\'[data-test=\\"challenge-choice-card\\"]\',CHALLENGE_CHOICE=\'[data-test=\\"challenge-choice\\"]\',CHALLENGE_TRANSLATE_INPUT=\'[data-test=\\"challenge-translate-input\\"]\',CHALLENGE_LISTEN_TAP=\'[data-test=\\"challenge-listenTap\\"]\',CHALLENGE_JUDGE_TEXT=\'[data-test=\\"challenge-judge-text\\"]\',CHALLENGE_TEXT_INPUT=\'[data-test=\\"challenge-text-input\\"]\',CHALLENGE_TAP_TOKEN=\'[data-test=\\"challenge-tap-token\\"]\',PLAYER_NEXT=\'[data-test=\\"player-next\\"]\',PLAYER_SKIP=\'[data-test=\\"player-skip\\"]\',BLAME_INCORRECT=\'[data-test=\\"blame blame-incorrect\\"]\',CHARACTER_MATCH=\'[data-test=\\"challenge challenge-characterMatch\\"]\',clickEvent=new MouseEvent(\\"click\\",{view:window,bubbles:!0,cancelable:!0});function getChallengeObj(e){let t=null;if(e instanceof Array)for(let c=0;c<e.length&&!(t=getChallengeObj(e[c]));c++);else for(let c in e){if(\\"challenge\\"==c&&\\"object\\"==typeof e[c])return e;if((e[c]instanceof Object||e[c]instanceof Array)&&(t=getChallengeObj(e[c])))break}return t}function getChallenge(){const e=document.getElementsByClassName(dataTestComponentClassName)[0];if(e){const t=e[Object.keys(e).filter(e=>/^__reactProps/g.test(e))[0]],{challenge:c}=getChallengeObj(t);return c}return document.querySelectorAll(PLAYER_NEXT)[0].dispatchEvent(clickEvent),null}function pressEnter(){document.dispatchEvent(new KeyboardEvent(\\"keydown\\",{keyCode:13,which:13}))}function dynamicInput(e,t){let c=e,n=c.value;c.value=t;let E=new Event(\\"input\\",{bubbles:!0});E.simulated=!0;let o=c._valueTracker;o&&o.setValue(n),c.dispatchEvent(E)}function classify(){const e=getChallenge();if(e)switch(DEBUG&&console.log(`${e.type}`,e),e.type){case SELECT_PRONUNCIATION_TYPE:case READ_COMPREHENSION_TYPE:case LISTEN_COMPREHENSION_TYPE:case FORM_TYPE:{const{choices:t,correctIndex:c}=e;return DEBUG&&console.log(\\"READ_COMPREHENSION LISTEN_COMPREHENSION FORM\\",{choices:t,correctIndex:c}),document.querySelectorAll(CHALLENGE_CHOICE)[c].dispatchEvent(clickEvent),{choices:t,correctIndex:c}}case SELECT_TYPE:case CHARACTER_SELECT_TYPE:{const{choices:t,correctIndex:c}=e;return DEBUG&&console.log(\\"SELECT CHARACTER_SELECT\\",{choices:t,correctIndex:c}),document.querySelectorAll(CHALLENGE_CHOICE_CARD)[c].dispatchEvent(clickEvent),{choices:t,correctIndex:c}}case CHARACTER_MATCH_TYPE:{const{pairs:t}=e,c=document.querySelectorAll(CHALLENGE_TAP_TOKEN);return t.forEach(e=>{for(let t=0;t<c.length;t++)c[t].innerText!==e.transliteration&&c[t].innerText!==e.character||c[t].dispatchEvent(clickEvent)}),{pairs:t}}case TRANSLATE_TYPE:{const{correctTokens:t,correctSolutions:c}=e;if(DEBUG&&console.log(\\"TRANSLATE\\",{correctTokens:t}),t){const e=document.querySelectorAll(CHALLENGE_TAP_TOKEN);let c=[];for(let n in t)for(let E in e){const o=e[E];if(!c.includes(E)&&o.innerText===t[n]){o.dispatchEvent(clickEvent),c.push(E),DEBUG&&console.log(`correctTokenIndex [${t[n]}] - tokenIndex [${o.innerText}]`);break}}}else if(c){dynamicInput(document.querySelectorAll(CHALLENGE_TRANSLATE_INPUT)[0],c[0])}return{correctTokens:t}}case NAME_TYPE:{const{correctSolutions:t}=e;return DEBUG&&console.log(\\"NAME\\",{correctSolutions:t}),dynamicInput(document.querySelectorAll(CHALLENGE_TEXT_INPUT)[0],t[0]),{correctSolutions:t}}case COMPLETE_REVERSE_TRANSLATION_TYPE:{const{displayTokens:t}=e;DEBUG&&console.log(\\"COMPLETE_REVERSE_TRANLATION\\",{displayTokens:t});const{text:c}=t.filter(e=>e.isBlank)[0];return dynamicInput(document.querySelectorAll(CHALLENGE_TEXT_INPUT)[0],c),{displayTokens:t}}case LISTEN_TAP_TYPE:{const{correctTokens:t}=e;DEBUG&&console.log(\\"LISTEN_TAP\\",{correctTokens:t});const c=document.querySelectorAll(CHALLENGE_TAP_TOKEN);for(let e in t)c.forEach(c=>{c.innerText===t[e]&&c.dispatchEvent(clickEvent)});return{correctTokens:t}}case LISTEN_TYPE:{const{prompt:t}=e;return DEBUG&&console.log(\\"LISTEN\\",{prompt:t}),dynamicInput(document.querySelectorAll(CHALLENGE_TRANSLATE_INPUT)[0],t),{prompt:t}}case JUDGE_TYPE:{const{correctIndices:t}=e;return DEBUG&&console.log(\\"JUDGE\\",{correctIndices:t}),document.querySelectorAll(CHALLENGE_JUDGE_TEXT)[t[0]].dispatchEvent(clickEvent),{correctIndices:t}}case DIALOGUE_TYPE:case CHARACTER_INTRO_TYPE:case SELECT_TRANSCRIPTION_TYPE:{const{choices:t,correctIndex:c}=e;return DEBUG&&console.log(\\"DIALOGUE CHARACTER_INTRO\\",{choices:t,correctIndex:c}),document.querySelectorAll(CHALLENGE_JUDGE_TEXT)[c].dispatchEvent(clickEvent),{choices:t,correctIndex:c}}case SPEAK_TYPE:{const{prompt:t}=e;return DEBUG&&console.log(\\"SPEAK\\",{prompt:t}),document.querySelectorAll(PLAYER_SKIP)[0].dispatchEvent(clickEvent),{prompt:t}}}}function breakWhenIncorrect(){document.querySelectorAll(BLAME_INCORRECT).length>0&&(console.log(\\"Incorrect, stopped\\"),clearInterval(mainInterval))}function main(){try{\\"CONTINUE\\"!==document.querySelectorAll(PLAYER_NEXT)[0].textContent.toUpperCase().valueOf()&&(classify(),breakWhenIncorrect(),pressEnter()),setTimeout(pressEnter,150)}catch(e){console.log(e)}}function solveChallenge(){mainInterval=setInterval(main,TIME_OUT),console.log(`to stop run this command clearInterval(${mainInterval})`)}solveChallenge();"'},c=!0;if("object"==typeof this.artoo&&(artoo.settings.reload||(artoo.log.verbose("artoo already exists within this page. No need to inject him again."),artoo.loadSettings(t),artoo.exec(),c=!1)),c){var n=document.getElementsByTagName("body")[0];n||(n=document.createElement("body"),document.firstChild.appendChild(n));var o=document.createElement("script");console.log("artoo.js is loading..."),o.src="//medialab.github.io/artoo/public/dist/artoo-latest.min.js",o.type="text/javascript",o.id="artoo_injected_script",o.setAttribute("settings",JSON.stringify(t)),n.appendChild(o)}}).call(this);
+          const DEBUG = true;
+          let mainInterval;
+          const dataTestComponentClassName = "e4VJZ";
+          const TIME_OUT = 1000;
 
+          // Challenge types
+          const CHARACTER_SELECT_TYPE = "characterSelect";
+          const CHARACTER_MATCH_TYPE = "characterMatch";
+          const TRANSLATE_TYPE = "translate";
+          const LISTEN_TAP_TYPE = "listenTap";
+          const NAME_TYPE = "name";
+          const COMPLETE_REVERSE_TRANSLATION_TYPE = "completeReverseTranslation";
+          const LISTEN_TYPE = "listen";
+          const SELECT_TYPE = "select";
+          const JUDGE_TYPE = "judge";
+          const FORM_TYPE = "form";
+          const LISTEN_COMPREHENSION_TYPE = "listenComprehension";
+          const READ_COMPREHENSION_TYPE = "readComprehension";
+          const CHARACTER_INTRO_TYPE = "characterIntro";
+          const DIALOGUE_TYPE = "dialogue";
+          const SELECT_TRANSCRIPTION_TYPE = "selectTranscription";
+          const SPEAK_TYPE = "speak";
+          const SELECT_PRONUNCIATION_TYPE = "selectPronunciation";
+          const LISTEN_ISOLATION_TYPE = "listenIsolation";
+
+          // W.I.P
+          const ASSIST_TYPE = "assist";
+          const TAP_COMPLETE_TYPE = "tapComplete";
+          const GAP_FILL_TYPE = "gapFill";
+          const CHARACTER_TRACE_TYPE = "characterTrace";
+          const CHALLENGE_PUZZLE_TYPE = "characterPuzzle";
+          const DEFINITION_TYPE = "definition";
+          const MATCH_TYPE = "match";
+          const TAP_DESCRIBE_TYPE = "tapDescribe";
+          const FREE_RESPONSE_TYPE = "freeResponse";
+
+          // Query DOM keys
+          const CHALLENGE_CHOICE_CARD = '[data-test="challenge-choice-card"]';
+          const CHALLENGE_CHOICE = '[data-test="challenge-choice"]';
+          const CHALLENGE_TRANSLATE_INPUT = '[data-test="challenge-translate-input"]';
+          const CHALLENGE_LISTEN_TAP = '[data-test="challenge-listenTap"]';
+          const CHALLENGE_JUDGE_TEXT = '[data-test="challenge-judge-text"]';
+          const CHALLENGE_TEXT_INPUT = '[data-test="challenge-text-input"]';
+          const CHALLENGE_TAP_TOKEN = '[data-test="challenge-tap-token"]';
+          const CHALLENGE_TAP_TOKEN_TEXT = '[data-test="challenge-tap-token-text"]';
+          const PLAYER_NEXT = '[data-test="player-next"]';
+          const PLAYER_SKIP = '[data-test="player-skip"]';
+          const AUDIO_BUTTON = '[data-test="audio-button"]';
+          const WORD_BANK = '[data-test="word-bank"]';
+          const BLAME_INCORRECT = '[data-test="blame-incorrect"]';
+          const CHARACTER_MATCH = '[data-test="challenge challenge-characterMatch"]';
+          const STORIES_PLAYER_NEXT = '[data-test="stories-player-continue"]';
+          const STORIES_CHOICE = '[data-test="stories-choice"]';
+          const STORIES_ELEMENT = '[data-test="stories-element"]';
+          mainInterval = setInterval(main, TIME_OUT);
+          // Mouse Click
+          const clickEvent = new MouseEvent("click", {
+              view: window,
+              bubbles: true,
+              cancelable: true,
+          });
+
+          // Gets Challenge Object
+          function getChallengeObj(theObject) {
+              let result = null;
+              if (theObject instanceof Array) {
+                  for (let i = 0; i < theObject.length; i++) {
+                      result = getChallengeObj(theObject[i]);
+                      if (result) {
+                          break;
+                      }
+                  }
+              } else {
+                  for (let prop in theObject) {
+                      if (prop == "challenge") {
+                          if (typeof theObject[prop] == "object") {
+                              return theObject;
+                          }
+                      }
+                      if (
+                          theObject[prop] instanceof Object ||
+                          theObject[prop] instanceof Array
+                      ) {
+                          result = getChallengeObj(theObject[prop]);
+                          if (result) {
+                              break;
+                          }
+                      }
+                  }
+              }
+              return result;
+          }
+
+          // Gets the Challenge
+          function getChallenge() {
+              const dataTestDOM = document.getElementsByClassName(
+                  dataTestComponentClassName
+              )[0];
+
+              if (!dataTestDOM) {
+                  document.querySelectorAll(PLAYER_NEXT)[0].dispatchEvent(clickEvent);
+                  return null;
+              } else {
+                  const dataTestAtrr = Object.keys(dataTestDOM).filter((att) =>
+                                                                       /^__reactProps/g.test(att)
+                                                                      )[0];
+                  const childDataTestProps = dataTestDOM[dataTestAtrr];
+                  const { challenge } = getChallengeObj(childDataTestProps);
+                  return challenge;
+              }
+          }
+
+          // pressEnter() function
+          function pressEnter() {
+              const clickEvent = new MouseEvent("click", {
+                  view: window,
+                  bubbles: true,
+                  cancelable: false,
+              });
+              document
+                  .querySelector('button[data-test="player-next"]')
+                  .dispatchEvent(clickEvent);
+          }
+
+          // pressEnter() function but for stories
+          function pressEnterStories() {
+              const clickEvent = new MouseEvent("click", {
+                  view: window,
+                  bubbles: true,
+                  cancelable: false,
+              });
+              document
+                  .querySelector('button[data-test="stories-player-continue"]')
+                  .dispatchEvent(clickEvent);
+          }
+
+          // dynamicInput() function
+          function dynamicInput(element, msg) {
+              let input = element;
+              let lastValue = input.value;
+              input.value = msg;
+              let event = new Event("input", { bubbles: true });
+              event.simulated = true;
+              let tracker = input._valueTracker;
+              if (tracker) {
+                  tracker.setValue(lastValue);
+              }
+              input.dispatchEvent(event);
+          }
+
+          // Solves the Challenge
+          function classify() {
+              const challenge = getChallenge();
+              if (!challenge) return;
+              if (DEBUG) console.log(`${challenge.type}`, challenge);
+              switch (challenge.type) {
+                  case GAP_FILL_TYPE:
+                  case SELECT_TYPE:
+                  case SELECT_PRONUNCIATION_TYPE:
+                  case READ_COMPREHENSION_TYPE:
+                  case LISTEN_COMPREHENSION_TYPE:
+                  case CHARACTER_SELECT_TYPE:
+                  case FORM_TYPE: {
+                      const { choices, correctIndex } = challenge;
+                      if (DEBUG) {
+                          console.log(
+                              "READ_COMPREHENSION, LISTEN_COMPREHENSION, CHARACTER_SELECT_TYPE, GAP_FILL_TYPE, SELECT_PRONUNCIATION_TYPE",
+                              { choices, correctIndex }
+                          );}
+                      document
+                          .querySelectorAll(CHALLENGE_CHOICE)
+                      [correctIndex].dispatchEvent(clickEvent);
+                      return { choices, correctIndex };
+                  }
+
+                  case TAP_COMPLETE_TYPE: {
+                      const { choices, correctIndices } = challenge;
+                      const tokens = document.querySelectorAll(WORD_BANK);
+                      if (DEBUG) {console.log("TAP_COMPLETE_TYPE", { choices, correctIndices, tokens });}
+                      return { choices, correctIndices };
+                  }
+
+                  case LISTEN_ISOLATION_TYPE: {
+                      const { correctIndex } = challenge;
+                      const tokens = document.querySelectorAll(CHALLENGE_CHOICE);
+                      if (DEBUG) {console.log("LISTEN_ISOLATION_TYPE", { correctIndex, tokens });}
+                      tokens.forEach((e, i) => {
+                          if(i == correctIndex) {
+                              e.dispatchEvent(clickEvent);
+                          }
+                      });
+                      return { correctIndex };
+                  }
+
+                  case MATCH_TYPE: {
+                      const { pairs } = challenge;
+                      const tokens = document.querySelectorAll(CHALLENGE_TAP_TOKEN_TEXT);
+                      if (DEBUG) {console.log("CHARACTER_MATCH_TYPE", { tokens, pairs });}
+                      pairs.forEach((pair) => {
+                          for (let i = 0; i < tokens.length; i++) {
+                              if (
+                                  tokens[i].innerText === pair.fromToken ||
+                                  tokens[i].innerText === pair.learningToken
+                              ) {
+                                  tokens[i].dispatchEvent(clickEvent);
+                              }
+                          }
+                      });
+                      return { pairs };
+                  }
+
+                  case CHARACTER_MATCH_TYPE: {
+                      const { pairs } = challenge;
+                      const tokens = document.querySelectorAll(CHALLENGE_TAP_TOKEN);
+                      if (DEBUG) {console.log("CHARACTER_MATCH_TYPE", { tokens, pairs });}
+                      pairs.forEach((pair) => {
+                          for (let i = 0; i < tokens.length; i++) {
+                              if (
+                                  tokens[i].innerText === pair.transliteration ||
+                                  tokens[i].innerText === pair.character
+                              ) {
+                                  tokens[i].dispatchEvent(clickEvent);
+                              }
+                          }
+                      });
+                      return { pairs };
+                  }
+
+                  case TRANSLATE_TYPE: {
+                      const { correctTokens, correctSolutions } = challenge;
+                      if (DEBUG) {console.log("TRANSLATE_TYPE", { correctTokens, correctSolutions });}
+                      if (correctTokens) {
+                          const tokens = document.querySelectorAll(CHALLENGE_TAP_TOKEN);
+                          let ignoreTokeIndexes = [];
+                          for (let correctTokenIndex in correctTokens) {
+                              for (let tokenIndex in tokens) {
+                                  const token = tokens[tokenIndex];
+                                  if (ignoreTokeIndexes.includes(tokenIndex)) continue;
+                                  if (token.innerText === correctTokens[correctTokenIndex]) {
+                                      token.dispatchEvent(clickEvent);
+                                      ignoreTokeIndexes.push(tokenIndex);
+                                      if (DEBUG) {
+                                          console.log(
+                                              `correctTokenIndex [${correctTokens[correctTokenIndex]}] - tokenIndex [${token.innerText}]`
+                                          );
+                                      }
+                                      break;
+                                  }
+                              }
+                          }
+                      } else if (correctSolutions) {
+                          let textInputElement = document.querySelectorAll(
+                              CHALLENGE_TRANSLATE_INPUT
+                          )[0];
+                          dynamicInput(textInputElement, correctSolutions[0]);
+                      }
+                      return { correctTokens };
+                  }
+
+                  case NAME_TYPE: {
+                      const { correctSolutions, articles } = challenge;
+                      if (DEBUG) {console.log("NAME_TYPE", { correctSolutions, articles });}
+                      const regexFrom = (articles, flags) =>
+                      new RegExp(
+                          articles
+                          .map((s) => s.replace(/[()[\]{}*+?^$|#.,\/\\\s-]/g, "\\$&"))
+                          .sort((a, b) => b.length - a.length)
+                          .join("|"),
+                          flags
+                      );
+                      let textInputElement = document.querySelectorAll(CHALLENGE_TEXT_INPUT)[0];
+                      let articleChoiceElement =
+                          document.querySelectorAll(CHALLENGE_JUDGE_TEXT);
+                      let string = correctSolutions[0];
+                      const pattern = regexFrom(articles, "i");
+                      console.log(string);
+                      let result;
+                      while ((result = pattern.exec(string))) {
+                          let x = string.replace(result[0], "");
+                          let correctSolution = x.trim();
+                          console.log(correctSolution);
+                          dynamicInput(textInputElement, correctSolution);
+                          for (let i = 0; i < articles.length; i++) {
+                              if (articles[i] === result) {
+                                  console.log(result);
+                                  articleChoiceElement[i].dispatchEvent(clickEvent);
+                                  document
+                                      .querySelectorAll(CHALLENGE_CHOICE)
+                                  [i].dispatchEvent(clickEvent);
+                                  document
+                                      .querySelectorAll(CHALLENGE_CHOICE)
+                                  [result].dispatchEvent(clickEvent);
+                              }
+                          }
+                          return { correctSolutions, articles };
+                      }
+                      break;
+                  }
+
+                  case COMPLETE_REVERSE_TRANSLATION_TYPE: {
+                      const { displayTokens } = challenge;
+                      if (DEBUG) {console.log("COMPLETE_REVERSE_TRANLATION_TYPE", { displayTokens });}
+                      const { text } = displayTokens.filter((token) => token.isBlank)[0];
+                      let textInputElement = document.querySelectorAll(CHALLENGE_TEXT_INPUT)[0];
+                      dynamicInput(textInputElement, text);
+                      return { displayTokens };
+                  }
+
+                  case LISTEN_TAP_TYPE: {
+                      const { correctTokens } = challenge;
+                      if (DEBUG) {console.log("LISTEN_TAP_TYPE", { correctTokens });}
+                      const tokens = document.querySelectorAll(CHALLENGE_TAP_TOKEN);
+                      for (let wordIndex in correctTokens) {
+                          tokens.forEach((token) => {
+                              if (token.innerText === correctTokens[wordIndex]) {
+                                  token.dispatchEvent(clickEvent);
+                              }
+                          });
+                      }
+                      return { correctTokens };
+                  }
+
+                  case LISTEN_TYPE: {
+                      const { prompt } = challenge;
+                      if (DEBUG) {console.log("LISTEN_TYPE", { prompt });}
+                      let textInputElement = document.querySelectorAll(
+                          CHALLENGE_TRANSLATE_INPUT
+                      )[0];
+                      dynamicInput(textInputElement, prompt);
+                      return { prompt };
+                  }
+
+                  case JUDGE_TYPE: {
+                      const { correctIndices } = challenge;
+                      if (DEBUG) {console.log("JUDGE_TYPE", { correctIndices });}
+                      document
+                          .querySelectorAll(CHALLENGE_JUDGE_TEXT)
+                      [correctIndices[0]].dispatchEvent(clickEvent);
+                      return { correctIndices };
+                  }
+
+                  case DIALOGUE_TYPE:
+                  case CHARACTER_INTRO_TYPE: {
+                      const { choices, correctIndex } = challenge;
+                      if (DEBUG)
+                      {console.log("CHARACTER_INTRO_TYPE, DIALOGUE_TYPE", {
+                          choices,
+                          correctIndex,
+                      });}
+                      document
+                          .querySelectorAll(CHALLENGE_JUDGE_TEXT)
+                      [correctIndex].dispatchEvent(clickEvent);
+                      return { choices, correctIndex };
+                  }
+
+                  case SELECT_TRANSCRIPTION_TYPE: {
+                      const { choices, correctIndex } = challenge;
+                      if (DEBUG) {console.log("SELECT_TRANSCRIPTION_TYPE", { choices, correctIndex });}
+                      document
+                          .querySelectorAll(CHALLENGE_JUDGE_TEXT)
+                      [correctIndex].dispatchEvent(clickEvent);
+                      return { choices, correctIndex };
+                  }
+
+                  case SPEAK_TYPE: {
+                      const { prompt } = challenge;
+                      if (DEBUG) {console.log("SPEAK_TYPE", { prompt });}
+                      document.querySelectorAll(PLAYER_SKIP)[0].dispatchEvent(clickEvent);
+                      return { prompt };
+                  }
+
+                  case ASSIST_TYPE: {
+                      const { choices, correctIndex } = challenge;
+                      if (DEBUG) {console.log("ASSIST_TYPE", { choices, correctIndex });}
+                      document
+                          .querySelectorAll(CHALLENGE_JUDGE_TEXT)
+                      [correctIndex].dispatchEvent(clickEvent);
+                      return { choices, correctIndex };
+                  }
+
+                  default:
+                      break;
+              }
+          }
+
+          // Stops when an answer is incorrect
+          function breakWhenIncorrect() {
+              const isBreak = document.querySelectorAll(BLAME_INCORRECT).length > 0;
+              if (isBreak) {
+                  console.log("Incorrect, stopped");
+                  clearInterval(mainInterval);
+              }
+          }
+
+          // Main Function
+          function main() {
+              try {
+                  let isPlayerNext = document
+                  .querySelectorAll(PLAYER_NEXT)[0]
+                  .textContent.toUpperCase();
+                  if (isPlayerNext.valueOf() !== "CONTINUE") {
+                      classify();
+                      breakWhenIncorrect();
+                      pressEnter();
+                  }
+                  setTimeout(pressEnter, 150);
+              } catch (e) {
+                  console.log(e);
+              }
+          }
+
+          // Stories Function
+          function stories() {
+              try {
+                  let isPlayerNext = document
+                  .querySelectorAll(STORIES_PLAYER_NEXT)[0]
+                  .textContent.toUpperCase();
+                  if (isPlayerNext.valueOf() !== "CONTINUE") {
+                      classify();
+                      pressEnterStories();
+                  }
+                  setTimeout(pressEnterStories, 50);
+              } catch (e) {
+                  console.log(e);
+              }
+          }
+
+          // Calls main()
+          function solveChallenge() {
+              // Check if its a Skill / Alphabet / Checkpoint URL
+              if (/[sac][klh][ipe][lhc][lak]/gi.test(window.location.href) == true) {
+                  if (DEBUG) {console.log("Skill URL Detected");}
+                  mainInterval = setInterval(main, TIME_OUT);
+              }
+              // Check if its a Stories URL
+              if (/stories/gi.test(window.location.href) == true) {
+                  if (DEBUG) {console.log("Stories URL Detected");}
+                  mainInterval = setInterval(stories, TIME_OUT);
+              }
+              console.log(`to stop the script run "clearInterval(${mainInterval})"`);
+          }
+
+          (solveChallenge)();
 }}
 
 
