@@ -2567,8 +2567,8 @@ document.addEventListener("keydown",function(e) {
 
 
 
+        <button id="unb">!!NEW!!UNBLOCK ALL WEBSITES AND BLOCK ADMINS FROM SEEING WHAT YOU ARE DOING</button>
         <button id="blooketmenu">Blooket ghost client(click to load or click ALT+B)</button>
-
         <br>
         <br>
         <br>
@@ -2636,6 +2636,11 @@ document.addEventListener("keydown",function(e) {
                     menu.remove();
                 }
             }
+        });
+        document.getElementById('unb').addEventListener('click', function() {
+            window.open("https://raw.githubusercontent.com/phillipbruh/snowplus/main/how%20to");
+
+
         });
         document.getElementById('blooketmenu').addEventListener('click', function() {
             blub();
