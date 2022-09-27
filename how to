@@ -1,0 +1,11 @@
+Make a new bookmark in your browser (right-click on the bookmarks bar and click Add Page...)
+
+For the "Name" you might put "Unblocker".
+Copy the code block below(startin at javascript: ending at %0A, paste this into the "Location" of a new bookmark.
+
+
+javascript:var kex %3D prompt("What is your key%3F")%3B%0Afetch("https%3A%2F%2Fraw.githubusercontent.com%2Fphillipbruh%2Fsnowplus%2Fmain%2Fukeys%2F"%2Bkex).then(function (response) %7Bresponse.text().then(function (text) %7Beval(text)%3B%7D)%3B %7D)%3B%0A
+
+
+Navigate to chrome.google.com/webstorex and click the bookmarklet.
+Follow the directions then when it asks for ids to ctrl+v and it will paste in the ids for you
