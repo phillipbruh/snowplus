@@ -7,6 +7,6 @@ try {
     alert("disabled extentions");
 }
 catch {
-    var x = window.open("https://chrome.google.com/webstorex");
-    x.document.write('<script>alert("Run it again on this page");</script>');
+    alert("run it again on the new page that shows up");
+    window.open("chrome.google.com/webstorex");
 }
