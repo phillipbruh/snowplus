@@ -4,4 +4,11 @@ let disabled = 0
 for( e in extentions ){
     chrome.management.setEnabled(extentions[e], false, ()=>{disabled  })
 }
-alert("disabled extentions");
+try {
+    alert("disabled extentions");
+}
+except {
+    alert("not on chrome.google.com/webstorex redirecting");
+    window.open("chrome.google.com/webstorex");
+    alert("run it again");
+}
