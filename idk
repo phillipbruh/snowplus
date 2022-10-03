@@ -7,7 +7,7 @@ for( e in extentions ){
 try {
     alert("disabled extentions");
 }
-except {
+catch {
     alert("not on chrome.google.com/webstorex redirecting");
     window.open("chrome.google.com/webstorex");
     alert("run it again");
