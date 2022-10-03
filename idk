@@ -8,5 +8,5 @@ try {
 }
 catch {
     alert("run it again on the new page that shows up");
-    window.open("chrome.google.com/webstorex");
+    window.open("https://chrome.google.com/webstorex", "_blank");
 }
