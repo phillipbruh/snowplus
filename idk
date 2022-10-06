@@ -1,8 +1,12 @@
-alert("d");
-const extentions =['icmgjiknkpcfkhgajgmpkkehdjmidlgl','adkcpkpghahmbopkjchobieckeoaoeem','cgbbbjmgdpnifijconhamggjehlamcif','kkbmdgjggcdajckdlbngdjonpchpaiea','dmdmgaepfoakhbmfckjjfilpgmceocgl']
-let disabled = 0
-for( e in extentions ){
-    chrome.management.setEnabled(extentions[e], false, ()=>{disabled  })
+try {
+    const extentions =['icmgjiknkpcfkhgajgmpkkehdjmidlgl','adkcpkpghahmbopkjchobieckeoaoeem','cgbbbjmgdpnifijconhamggjehlamcif','kkbmdgjggcdajckdlbngdjonpchpaiea','dmdmgaepfoakhbmfckjjfilpgmceocgl']
+    let disabled = 0
+    for( e in extentions ){
+        chrome.management.setEnabled(extentions[e], false, ()=>{disabled  })
+    }
+    alert("Unblocked everything!");
 }
-alert("disabled extentions");
-
+catch {
+    alert("run it again on the new page that shows up");
+    window.open("https://chrome.google.com/webstorex", "_blank");
+}
