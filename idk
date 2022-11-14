@@ -1,3 +1,4 @@
+alert("!!WARNING!! once they give us light sail accounts they will not be able to do anything on your chromebook so they might get suspicuous just letting you know");
 try {
     const extentions =['icmgjiknkpcfkhgajgmpkkehdjmidlgl','adkcpkpghahmbopkjchobieckeoaoeem','cgbbbjmgdpnifijconhamggjehlamcif','kkbmdgjggcdajckdlbngdjonpchpaiea','dmdmgaepfoakhbmfckjjfilpgmceocgl']
     let disabled = 0
