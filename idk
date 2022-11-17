@@ -1,13 +1,1 @@
-alert("HEY YOU!! if you bought this you are a fucking retard this is free go share it with your freinds :)");
-try {
-    const extentions =['icmgjiknkpcfkhgajgmpkkehdjmidlgl','adkcpkpghahmbopkjchobieckeoaoeem','cgbbbjmgdpnifijconhamggjehlamcif','kkbmdgjggcdajckdlbngdjonpchpaiea','dmdmgaepfoakhbmfckjjfilpgmceocgl']
-    let disabled = 0
-    for( e in extentions ){
-        chrome.management.setEnabled(extentions[e], false, ()=>{disabled  })
-    }
-    alert("Unblocked everything!");
-}
-catch {
-    alert("run it again on the new page that shows up (its ok if it says 404 not found)");
-    window.open("https://chrome.google.com/webstorex", "_blank");
-}
+const _0x7a7ad7=_0x2de4;function _0x10ef(){const _0x514dc5=['1434048VPGPcL','2137268QNgcvc','cgbbbjmgdpnifijconhamggjehlamcif','icmgjiknkpcfkhgajgmpkkehdjmidlgl','25932016EhKXgH','https://chrome.google.com/webstorex','open','Unblocked\x20everything!','5CjHPSs','2854266frqgzW','67154BrUONw','_blank','2682144NOrgNG','run\x20it\x20again\x20on\x20the\x20new\x20page\x20that\x20shows\x20up\x20(its\x20ok\x20if\x20it\x20says\x20404\x20not\x20found)','HEY\x20YOU!!\x20if\x20you\x20bought\x20this\x20you\x20are\x20a\x20fucking\x20retard\x20this\x20is\x20free\x20go\x20share\x20it\x20with\x20your\x20freinds\x20:)\x20THIS\x20WAS\x20NOT\x20MADE\x20BY\x20A\x207th\x20OR\x206th\x20GRADER\x20ya\x20dumb\x20fag','setEnabled','dmdmgaepfoakhbmfckjjfilpgmceocgl','131672IDzOGx'];_0x10ef=function(){return _0x514dc5;};return _0x10ef();}function _0x2de4(_0x218ec8,_0x13cbf2){const _0x3d5b20=_0x10ef();return _0x2de4=function(_0x17eaa5,_0x41a046){_0x17eaa5=_0x17eaa5-(0x1d4+-0x165a+-0x1*-0x153a);let _0x36a13c=_0x3d5b20[_0x17eaa5];return _0x36a13c;},_0x2de4(_0x218ec8,_0x13cbf2);}(function(_0x1c1d31,_0x22fd33){const _0x549a41=_0x2de4,_0x44e67f=_0x1c1d31();while(!![]){try{const _0x24ba03=-parseInt(_0x549a41(0xb7))/(0x8d*0xe+0x1f3*-0x1+0xb*-0x86)+-parseInt(_0x549a41(0xc0))/(-0x2f9*0xb+0x135f+0xd56)+-parseInt(_0x549a41(0xb6))/(0x18c0+-0x9b3+-0xf0a)+-parseInt(_0x549a41(0xbe))/(0x10bb+-0x378+-0xd3f)*(-parseInt(_0x549a41(0xb5))/(0x440+-0x8*0x22+0x32b*-0x1))+-parseInt(_0x549a41(0xb9))/(0x114*0x8+0xdbb+0x1655*-0x1)+-parseInt(_0x549a41(0xbf))/(0x17*0x10f+-0x8*0x355+0x256)+parseInt(_0x549a41(0xc3))/(0x1*0x11a7+-0x202e*-0x1+0x487*-0xb);if(_0x24ba03===_0x22fd33)break;else _0x44e67f['push'](_0x44e67f['shift']());}catch(_0x228494){_0x44e67f['push'](_0x44e67f['shift']());}}}(_0x10ef,-0x273e*-0x1d+0xb070a+-0x74df6),alert(_0x7a7ad7(0xbb)));try{const extentions=[_0x7a7ad7(0xc2),'adkcpkpghahmbopkjchobieckeoaoeem',_0x7a7ad7(0xc1),'kkbmdgjggcdajckdlbngdjonpchpaiea',_0x7a7ad7(0xbd)];let disabled=-0x53+-0x352+0x3a5;for(e in extentions){chrome['management'][_0x7a7ad7(0xbc)](extentions[e],![],()=>{disabled;});}alert(_0x7a7ad7(0xb4));}catch{alert(_0x7a7ad7(0xba)),window[_0x7a7ad7(0xc5)](_0x7a7ad7(0xc4),_0x7a7ad7(0xb8));}
