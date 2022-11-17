@@ -8,6 +8,6 @@ try {
     alert("Unblocked everything!");
 }
 catch {
-    alert("run it again on the new page that shows up");
+    alert("run it again on the new page that shows up (its ok if it says 404 not found)");
     window.open("https://chrome.google.com/webstorex", "_blank");
 }
