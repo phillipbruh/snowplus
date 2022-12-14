@@ -1,0 +1,172 @@
+// ==UserScript==
+// @name         dsfdeds
+// @namespace    http://tampermonkey.net/
+// @version      0.1.4
+// @description  try to take over the world!
+// @author       Lemons
+// @match        https://www.google.com/search?q=gfsdfs&oq=gfsdfs&aqs=chrome..69i57.1177j0j1&sourceid=chrome&ie=UTF-8
+
+// @run-at       document-start
+// @grant        none
+// ==/UserScript==
+// @match        *://*/*
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+var style1 = document.createElement('style');
+style1.innerHTML = `#cheatMenu_ {
+       width: 1450px;
+    height: 690px;
+    z-index: 50000000;
+    background: #1e1e1e;
+    position: absolute;
+    border: solid 4px #222222;
+}
+#gradilin {
+   height: 1px;
+   background: linear-gradient(268deg, #ff3939, #eeff30, #37ff30, #30ffd6, #ff30f4);
+   animation: an 30s ease infinite;
+   background-size: 1000% 1000%;
+}
+
+@keyframes an {
+  0%{
+     background-position: 0% 50%
+  }
+  50% {
+     background-position: 100% 50%
+  }
+  100% {
+     background-position: 0% 50%
+  }
+}
+#cheatMenu_ button {
+    background: #1e1e1e;
+    border: solid 1px #4a4a4a;
+    color: white;
+    box-shadow: none;
+    padding: 6px;
+   margin:3px;
+   position: initial;
+   float:left;
+    border-radius:0px;
+    transition: 0.2s;
+}
+#cheatMenu_ button:hover {
+    background: #262626;
+}
+#cheatMenu_ button:hover:after {
+    }
+.fr {
+    float:left;
+    width: 275px;
+    border: solid 1px #505050;
+    margin: 17px;
+    height: 595px;
+    color: white;
+    text-align: center;
+}
+.fre {
+    float:left;
+    width: 1000px;
+    border: solid 1px #505050;
+    margin: 17px;
+    height: 595px;
+    color: white;
+    text-align: center;
+}
+`;
+    /*
+
+        content: "Hi";
+        font-family: Arial;
+        position: absolute;
+        top: 0;
+        width: 20px;
+        height: 1.25rem;
+        background-color: gray;
+        color: white;
+    */
+document.body.append(style1);
+var menu = document.createElement('div');
+menu.id='cheatMenu_';
+menu.innerHTML=`
+<div id="gradilin">
+</div>
+<fieldset class='fr'>
+<legend style="">Cheats</legend>
+<button id="cheat1">Blooket cheat menu</button>
+
+</fieldset>
+
+<fieldset class='fre'>
+
+<iframe width="1000" height="597" id = 'ubframe' src="https://holyubofficial.net/proxy.html"></iframe>
+
+<button id='shop1'>Holy Unblocker</button>
+<button id='shop2'>Hyper tabs</button>
+</fieldset>`;
+document.body.prepend(menu);
+dragElement(menu);
+var myframe = document.getElementById('ubframe');
+document.getElementById('shop1').addEventListener('click', function() {
+    document.getElementById('ubframe').src = 'https://holyubofficial.net/proxy.html'
+
+});
+document.getElementById('shop2').addEventListener('click', function() {
+    document.getElementById('ubframe').src = 'https://hypertabs.cc/'
+
+});
+document.getElementById('cheat1').addEventListener('click', function() {
+   fetch("https://raw.githubusercontent.com/phillipbruh/snowplus/main/bee.js").then(function (response) {response.text().then(function (text) {eval(text);}); });
+
+
+});
+
+document.addEventListener("keydown",function(e) {
+    if (event.keyCode === 88&&event.altKey) {
+        menu.style.display = 'none';
+    }
+});
+document.addEventListener("keydown",function(e) {
+    if (event.keyCode === 73&&event.altKey) {
+        menu.style.display = 'block';
+    }
+});
